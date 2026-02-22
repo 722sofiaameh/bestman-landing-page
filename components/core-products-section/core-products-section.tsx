@@ -38,36 +38,36 @@ const products = [
 
 export const CoreProductsSection = (): JSX.Element => {
   return (
-    <section className="flex items-center justify-center py-[120px] px-4 md:px-8 lg:px-[120px]">
-      <div className="flex flex-col max-w-[1200px] w-full items-center gap-[50px]">
-        <header className="flex items-end justify-between w-full gap-8 -translate-y-4 animate-fade-in opacity-0">
-          <div className="flex flex-col items-start justify-center gap-5 flex-1">
+    <section className="flex items-center justify-center py-12 md:py-16 lg:py-[120px] px-4 md:px-8 lg:px-[120px]">
+      <div className="flex flex-col max-w-[1200px] w-full items-center gap-8 md:gap-12 lg:gap-[50px]">
+        <header className="flex flex-col sm:flex-row items-start sm:items-end justify-between w-full gap-6 sm:gap-8 -translate-y-4 animate-fade-in opacity-0">
+          <div className="flex flex-col items-start justify-center gap-4 md:gap-5 flex-1">
             <div className="flex flex-col items-start w-full">
-              <p className=" text-sm font-semibold text-[#0c6e8a] text-(length:--brentor-template-framer-website-semantic-heading-6-font-size) tracking-[var(--brentor-template-framer-website-semantic-heading-6-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-heading-6-line-height)] font-brentor-template-framer-website-semantic-heading-6 [font-style:var(--brentor-template-framer-website-semantic-heading-6-font-style)]">
+              <p className="text-sm font-semibold text-[#0c6e8a] text-(length:--brentor-template-framer-website-semantic-heading-6-font-size) tracking-[var(--brentor-template-framer-website-semantic-heading-6-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-heading-6-line-height)] font-brentor-template-framer-website-semantic-heading-6 [font-style:var(--brentor-template-framer-website-semantic-heading-6-font-style)]">
                 Our products
               </p>
             </div>
 
-            <div className="flex flex-col items-start max-w-[530px]">
-              <h2 className="text-[#1180c5] font-semibold text-[38px] whitespace-nowrap tracking-[-1.14px] leading-[49.4px]">
+            <div className="flex flex-col items-start max-w-full lg:max-w-[530px]">
+              <h2 className="text-[#1180c5] font-semibold text-[28px] md:text-[34px] lg:text-[38px] tracking-[-1.14px] leading-[1.3] md:leading-[49.4px]">
                 Our core products and services include.
               </h2>
             </div>
           </div>
 
-          <Button className="gap-4 pt-3 pb-[15px] px-[20px] bg-[#0c6e8a] hover:bg-[#0c6e8a]/90 h-auto rounded-none border border-[#0c6e8a] transition-colors">
-            <span className=" font-semibold text-greyscale-0 text-base tracking-[-0.48px] leading-[25.6px] whitespace-nowrap">
+          <Button className="cursor-pointer gap-3 md:gap-4 pt-3 pb-[15px] px-5 md:px-[20px] bg-[#0c6e8a] hover:bg-[#0c6e8a]/90 h-auto rounded-none border border-[#0c6e8a] transition-colors w-full sm:w-auto">
+            <span className="font-semibold text-greyscale-0 text-sm md:text-base tracking-[-0.48px] leading-[25.6px] whitespace-nowrap">
               All products
             </span>
-            <ArrowRightIcon className="w-6 h-6 text-greyscale-0" />
+            <ArrowRightIcon className="w-5 h-5 md:w-6 md:h-6 text-greyscale-0" />
           </Button>
         </header>
 
-        <div className="flex items-stretch justify-center gap-[30px] w-full flex-wrap lg:flex-nowrap">
+        <div className="flex flex-col md:flex-row items-stretch justify-center gap-6 md:gap-[30px] w-full lg:flex-nowrap">
           {products.slice(0, 2).map((product, index) => (
             <Card
               key={product.id}
-              className="flex flex-col flex-1 min-w-[280px] rounded-none border-0 shadow-none bg-white -translate-y-4 animate-fade-in opacity-0"
+              className="flex flex-col flex-1 min-w-0 md:min-w-[280px] rounded-none border-0 shadow-none bg-white -translate-y-4 animate-fade-in opacity-0"
               style={
                 {
                   "--animation-delay": `${200 + index * 200}ms`,
@@ -93,7 +93,7 @@ export const CoreProductsSection = (): JSX.Element => {
 
                   <a
                     href="#"
-                    className="inline-flex flex-col items-start group"
+                    className="cursor-pointer inline-flex flex-col items-start group"
                   >
                     <div className="flex items-center justify-center  relative pb-1">
                       <span
@@ -115,7 +115,7 @@ export const CoreProductsSection = (): JSX.Element => {
           ))}
 
           <Card
-            className="flex flex-col rounded-none flex-1 min-w-[280px] lg:min-w-[570px] border-0 shadow-none overflow-hidden translate-y-[-1rem] animate-fade-in opacity-0"
+            className="flex flex-col rounded-none flex-1 min-w-0 md:min-w-[280px] lg:min-w-[570px] border-0 shadow-none overflow-hidden translate-y-[-1rem] animate-fade-in opacity-0"
             style={{ "--animation-delay": "600ms" } as React.CSSProperties}
           >
             <CardContent className="flex flex-col justify-end gap-5 p-[30px] h-full min-h-[400px] relative">
@@ -138,7 +138,7 @@ export const CoreProductsSection = (): JSX.Element => {
 
               <a
                 href="#"
-                className="inline-flex flex-col items-start relative group"
+                className="cursor-pointer inline-flex flex-col items-start relative group"
               >
                 <div className="flex items-center justify-center gap-3 relative pb-1">
                   <span
