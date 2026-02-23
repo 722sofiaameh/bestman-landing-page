@@ -104,7 +104,7 @@ export default function ProductDetailsPage({ params }: ProductDetailsPageProps) 
     <div className="flex flex-col w-full items-start relative bg-white overflow-hidden">
       <Navbar backgroundColor="bg-[#1180C5]" />
 
-      <div className="w-full mt-16 sm:mt-20 md:mt-24 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+      <div className="w-full mt-24 sm:mt-20 md:mt-24 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
 
         {/* Header Section */}
         <div className="flex flex-col items-center justify-center py-6 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-[120px]">
