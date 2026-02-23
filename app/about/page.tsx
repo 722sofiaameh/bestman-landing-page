@@ -16,7 +16,7 @@ export default function AboutPage() {
   return (
     <div className="">
       <Navbar backgroundColor="bg-[#1180c5]" />
-      <div className="w-full pb-0 animate-fade-in opacity-0 [--animation-delay:1400ms] relative z-10 ">
+      <div className="w-full pb-0 relative z-10">
         <HeroSection />
       </div>
       <section className="relative w-full overflow-hidden">

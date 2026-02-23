@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { JSX } from "react";
 
@@ -73,19 +74,21 @@ export const MissionStatementSection = (): JSX.Element => {
           </div>
 
           <div className="-translate-y-4 animate-fade-in opacity-0 [--animation-delay:1000ms]">
-            <Button
-              variant="outline"
-              className="cursor-pointer h-auto flex items-center justify-center gap-4 bg-white rounded-none pt-3 pb-[15px] px-6 md:px-[30px] border-[#0c6e8a] text-[#0c6e8a] hover:bg-[#0c6e8a] hover:text-white transition-colors w-full sm:w-auto"
-            >
-              <span className="font-semibold text-sm md:text-base tracking-[-0.08px] leading-[25.6px]">
-                Why Bestman?
-              </span>
-              <img
-                src="/arrow-right 3.svg"
-                alt="Arrow right"
-                className="w-5 h-5 md:w-6 md:h-6"
-              />
-            </Button>
+            <Link href="/why-choose-us">
+              <Button
+                variant="outline"
+                className="cursor-pointer h-auto flex items-center justify-center gap-4 bg-white rounded-none pt-3 pb-[15px] px-6 md:px-[30px] border-[#0c6e8a] text-[#0c6e8a] hover:bg-[#0c6e8a] hover:text-white transition-colors w-full sm:w-auto"
+              >
+                <span className="font-semibold text-sm md:text-base tracking-[-0.08px] leading-[25.6px]">
+                  Why Bestman?
+                </span>
+                <img
+                  src="/arrow-right%203.svg"
+                  alt="Arrow right"
+                  className="w-5 h-5 md:w-6 md:h-6"
+                />
+              </Button>
+            </Link>
           </div>
         </div>
 

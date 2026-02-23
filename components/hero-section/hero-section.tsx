@@ -8,7 +8,7 @@ const coreValues = [
 
 export const HeroSection = (): JSX.Element => {
   return (
-    <section className=" flex items-center justify-center pt-[89px] pb-12 px-4 md:px-[120px] bg-[#1180c5] overflow-visible">
+    <section className=" flex items-center justify-center mt-12 pt-[129px] pb-12 px-4 md:px-[120px] bg-[#1180c5] overflow-visible">
       <div className="flex items-center justify-center px-[15px] py-0 max-w-[1200px] w-full relative">
         <div className="flex flex-col items-start gap-[18.9px] w-full max-w-[1170px]">
           <div className="flex flex-col items-start w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">

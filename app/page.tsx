@@ -14,10 +14,10 @@ export default function Home() {
       className="flex flex-col w-full items-start relative bg-greyscale-0 overflow-hidden"
       data-model-id="9619:6225"
     >
-      <div className="w-full -translate-y-4 animate-fade-in opacity-0">
+      <div className="w-full">
         <MissionVisionSection />
       </div>
-      <div className="w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+      <div className="w-full mt-28 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
         <HeroBannerSection />
       </div>
       <div className="w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">

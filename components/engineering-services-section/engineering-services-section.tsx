@@ -67,7 +67,7 @@ export const EngineeringServicesSection = ({ isServicesPage = false }: Engineeri
             </h2>
           </header>
         ) : (
-          <header className="w-full lg:py-[120px] flex flex-col lg:flex-row items-start gap-6 md:gap-8 lg:gap-[120px] -translate-y-4 animate-fade-in opacity-0">
+          <header className="w-full lg:pt-[20px] flex flex-col lg:flex-row items-start gap-6 md:gap-8 lg:gap-[120px] -translate-y-4 animate-fade-in opacity-0">
             <div className="shrink-0 max-w-full lg:max-w-[300px]">
               <p className="text-[#0C6E8A] font-semibold text-sm leading-[22px] md:leading-[25.6px]">
                 We offer a full spectrum of services designed to bring your

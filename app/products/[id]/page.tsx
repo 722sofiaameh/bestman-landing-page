@@ -106,7 +106,7 @@ export default function ProductDetailsPage({ params }: ProductDetailsPageProps) 
       <div className="w-full -translate-y-4 animate-fade-in opacity-0">
         <Navbar />
       </div>
-      <div className="w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+      <div className="w-full mt-24 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
         {/* Header Section */}
         <div className="flex flex-col items-center justify-center py-12 px-4 md:px-8 lg:px-[120px]">
           <div className="w-full max-w-[1200px]">

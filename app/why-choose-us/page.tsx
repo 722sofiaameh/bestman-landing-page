@@ -10,10 +10,8 @@ import { WhyChooseUsHeroSection } from "@/components/why-choose-us-hero-section/
 export default function WhyChooseUsPage() {
   return (
     <div className="flex flex-col w-full items-start relative bg-white overflow-hidden">
-      <div className="w-full -translate-y-4 animate-fade-in opacity-0">
-        <Navbar backgroundColor="bg-[#1180C5]" />
-      </div>
-      <div className="w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+      <Navbar backgroundColor="bg-[#1180C5]" />
+      <div className="w-full -translate-y-4 mt-24 animate-fade-in opacity-0 [--animation-delay:200ms]">
         <WhyChooseUsHeroSection />
       </div>
       <section className="relative w-full overflow-hidden" style={{ marginTop: '-40px', display: 'block' }}>
