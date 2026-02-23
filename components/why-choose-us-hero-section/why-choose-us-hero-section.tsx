@@ -56,21 +56,21 @@ export const WhyChooseUsHeroSection = () => {
 
         {/* Right side - Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:items-end shrink-0 w-full sm:w-auto">
-          <Link href="/about">
+          <Link href="/about" className="w-full sm:w-[180px]">
             <button
               data-animate
-              className="flex cursor-pointer items-center gap-2 bg-white text-[#1180C5] font-semibold text-sm sm:text-base px-5 sm:px-6 py-2.5 sm:py-3 rounded-sm hover:opacity-90 transition-opacity w-full sm:w-auto"
+              className="flex cursor-pointer items-center justify-center gap-2 bg-white text-[#1180C5] font-semibold text-sm sm:text-base px-5 sm:px-6 py-2.5 sm:py-3 rounded-none hover:opacity-90 transition-opacity w-full h-[44px]"
             >
-              <span>About Bestman</span>
+              <span className="whitespace-nowrap">About Bestman</span>
               <img src="/arrow-right 2.svg" alt="Arrow right" className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
             </button>
           </Link>
-          <Link href="/mission">
+          <Link href="/mission" className="w-full sm:w-[180px]">
             <button
               data-animate
-              className="flex cursor-pointer items-center gap-2 border-2 border-white text-white bg-transparent font-semibold text-sm sm:text-base px-5 sm:px-6 py-2.5 sm:py-3 rounded-sm hover:bg-white/10 transition-colors w-full sm:w-auto"
+              className="flex cursor-pointer items-center justify-center gap-2 border-2 border-white text-white bg-transparent font-semibold text-sm sm:text-base px-5 sm:px-6 py-2.5 sm:py-3 rounded-none hover:bg-white/10 transition-colors w-full h-[44px]"
             >
-              <span>Our mission</span>
+              <span className="whitespace-nowrap">Our mission</span>
               <img src="/arrow-right.svg" alt="Arrow right" className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
             </button>
           </Link>

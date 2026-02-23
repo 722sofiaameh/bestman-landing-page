@@ -173,7 +173,7 @@ export const ContactSection = (): JSX.Element => {
             {/* Submit */}
             <button
               onClick={handleSubmit}
-              className="w-full bg-[#0c6e8a] hover:bg-[#1180C5] text-white font-semibold text-sm sm:text-base py-3 sm:py-4 rounded-sm transition-colors duration-200 mt-1"
+              className="w-full bg-[#0c6e8a] hover:bg-[#1180C5] text-white font-semibold text-sm sm:text-base py-3 sm:py-4 rounded-none transition-colors duration-200 mt-1"
             >
               Submit
             </button>

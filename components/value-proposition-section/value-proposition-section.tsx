@@ -79,7 +79,7 @@ export const ValuePropositionSection = (): React.ReactElement => {
           <div className="inline-flex flex-col items-start relative flex-[0_0_auto]">
             <Link href="/why-choose-us">
               <button
-                className="gap-4 pt-3 pb-[15px] px-[30px] flex-[0_0_auto] bg-[#0c6e8a] inline-flex items-center justify-center relative hover:bg-[#0a5c73] transition-colors cursor-pointer border-0"
+                className="gap-4 pt-3 pb-[15px] px-[30px] flex-[0_0_auto] bg-[#0c6e8a] inline-flex items-center justify-center relative hover:bg-[#0a5c73] transition-colors cursor-pointer border-0 rounded-none"
                 aria-label="Learn more about why choose us"
               >
                 <div className="inline-flex flex-col items-start relative flex-[0_0_auto]">

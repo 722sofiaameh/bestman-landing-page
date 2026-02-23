@@ -20,7 +20,7 @@ const socialLinks = [
 
 export const FooterSection = (): JSX.Element => {
   return (
-    <footer className="flex flex-col w-full items-center justify-center pt-12 md:pt-16 lg:pt-[100px] pb-48 lg:pb-5 px-0 bg-greyscale-0">
+    <footer className="flex flex-col w-full items-center justify-center pt-12 md:pt-16 lg:pt-[100px] pb-16 lg:pb-5 px-0 bg-greyscale-0">
       <div className="flex flex-col w-full max-w-[1200px] items-center justify-center gap-8 md:gap-10 px-4 md:px-[15px] py-0">
         <div className="flex flex-col items-start gap-0 w-full">
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between pt-0 pb-5 px-0 w-full border-b border-[#dde0e3] gap-6 md:gap-0">
@@ -139,7 +139,7 @@ export const FooterSection = (): JSX.Element => {
               </div>
 
               <form
-                className="flex flex-col sm:flex-row items-stretch sm:items-start gap-2 sm:gap-1.5 w-full"
+                className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-1.5 w-full"
                 onSubmit={(e) => e.preventDefault()}
               >
                 <Input
@@ -150,7 +150,7 @@ export const FooterSection = (): JSX.Element => {
                 />
                 <Button
                   type="submit"
-                  className="cursor-pointer h-auto min-w-full sm:min-w-[140px] rounded-none min-h-[3px] px-6 md:px-[32.86px] py-2 bg-[#0c6e8a] hover:bg-[#0c6e8a]/90 border border-[#0c6e8a] font-brentor-template-framer-website-semantic-button font-[number:var(--brentor-template-framer-website-semantic-button-font-weight)] text-greyscale-0 text-sm md:text-[length:var(--brentor-template-framer-website-semantic-button-font-size)] tracking-[var(--brentor-template-framer-website-semantic-button-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-button-line-height)] whitespace-nowrap [font-style:var(--brentor-template-framer-website-semantic-button-font-style)] transition-colors"
+                  className="cursor-pointer h-auto min-w-full sm:min-w-[140px] rounded-none px-6 md:px-[32.86px] py-2 md:py-2.5 bg-[#0c6e8a] hover:bg-[#0c6e8a]/90 border border-[#0c6e8a] font-brentor-template-framer-website-semantic-button font-[number:var(--brentor-template-framer-website-semantic-button-font-weight)] text-greyscale-0 text-sm md:text-[length:var(--brentor-template-framer-website-semantic-button-font-size)] tracking-[var(--brentor-template-framer-website-semantic-button-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-button-line-height)] whitespace-nowrap [font-style:var(--brentor-template-framer-website-semantic-button-font-style)] transition-colors"
                 >
                   Subscribe
                 </Button>

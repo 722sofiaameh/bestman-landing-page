@@ -34,7 +34,7 @@ export const HeroContentSection = (): JSX.Element => {
           </ul>
 
           <Link href="/contact">
-            <Button className="h-auto bg-[#0c6e8a] hover:bg-[#0a5a70] text-white px-[30px] pt-3 pb-[15px] gap-4 transition-colors -translate-y-2 animate-fade-in opacity-0 [--animation-delay:600ms]">
+            <Button className="h-auto bg-[#0c6e8a] hover:bg-[#0a5a70] text-white px-[30px] pt-3 pb-[15px] gap-4 rounded-none transition-colors -translate-y-2 animate-fade-in opacity-0 [--animation-delay:600ms]">
               <span className="font-semibold tracking-[-0.08px] leading-[25.6px]">
                 Contact Us
               </span>

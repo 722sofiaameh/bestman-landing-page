@@ -63,7 +63,7 @@ export const CoreValuesSection = (): JSX.Element => {
           </div>
 
           <Link href="/why-choose-us">
-            <Button className="bg-[#0c6e8a] hover:bg-[#0a5a71] text-white gap-4 pt-3 pb-[15px] px-[30px] h-auto transition-colors cursor-pointer">
+            <Button className="bg-[#0c6e8a] hover:bg-[#0a5a71] text-white gap-4 pt-3 pb-[15px] px-[30px] h-auto rounded-none transition-colors cursor-pointer">
               <span className="font-semibold text-sm sm:text-base tracking-[-0.08px] leading-[25.6px] [font-family:'Plus_Jakarta_Sans',Helvetica]">
                 Why choose us
               </span>

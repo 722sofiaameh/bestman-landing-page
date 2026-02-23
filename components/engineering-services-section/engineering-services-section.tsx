@@ -79,7 +79,7 @@ export const EngineeringServicesSection = ({
               leading-[28px] sm:leading-[32px] md:leading-[44px] lg:leading-[49.4px]
               tracking-[-0.4px] sm:tracking-[-0.6px] md:tracking-[-0.9px] lg:tracking-[-1.14px]
             ">
-              Reliable construction<span className="hidden lg:inline"><br /></span>services offered.
+              Reliable construction<span className="hidden lg:inline"><br /></span> services offered.
             </h2>
           </header>
         ) : (

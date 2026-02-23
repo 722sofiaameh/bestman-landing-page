@@ -31,7 +31,7 @@ export const ServiceDetailHeroSection = ({ service }: ServiceDetailHeroSectionPr
           </p>
 
           <Link href="/contact">
-            <button className="flex items-center gap-2 bg-white border-2 border-[#1180C5] text-[#1180C5] font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-sm hover:opacity-90 transition-opacity w-full sm:w-fit text-sm sm:text-base">
+            <button className="flex items-center gap-2 bg-white border-2 border-[#1180C5] text-[#1180C5] font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-none hover:opacity-90 transition-opacity w-fit sm:w-fit text-sm sm:text-base">
               <span>Get in touch</span>
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>

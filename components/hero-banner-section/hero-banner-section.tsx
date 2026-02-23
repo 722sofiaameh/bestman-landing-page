@@ -49,16 +49,18 @@ export const HeroBannerSection = (): React.ReactElement => {
           <div className="-translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms] flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-4 sm:gap-[50px] w-full">
 
             {/* ✅ PRIMARY BUTTON */}
-            <Button className="cursor-pointer h-auto flex items-center justify-center gap-3 sm:gap-4 pt-3 pb-[15px] px-6 md:px-[30px] bg-greyscale-0 hover:bg-greyscale-0/90 text-[#1180c5] rounded-none border border-white transition-colors w-full sm:w-auto">
-              <span className="font-semibold text-sm sm:text-base tracking-[-0.08px] leading-[22px] sm:leading-[25.6px]">
-                Request a quote
-              </span>
-              <img
-                src="/arrow-right 2.svg"
-                alt="Arrow right"
-                className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6"
-              />
-            </Button>
+            <Link href="/contact">
+              <Button className="cursor-pointer h-auto flex items-center justify-center gap-3 sm:gap-4 pt-3 pb-[15px] px-6 md:px-[30px] bg-greyscale-0 hover:bg-greyscale-0/90 text-[#1180c5] rounded-none border border-white transition-colors w-full sm:w-auto">
+                <span className="font-semibold text-sm sm:text-base tracking-[-0.08px] leading-[22px] sm:leading-[25.6px]">
+                  Request a quote
+                </span>
+                <img
+                  src="/arrow-right 2.svg"
+                  alt="Arrow right"
+                  className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6"
+                />
+              </Button>
+            </Link>
 
             {/* ✅ SECONDARY LINK */}
             <Link href="/about">

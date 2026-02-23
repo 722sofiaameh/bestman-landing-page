@@ -66,7 +66,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
     <div className="border-b border-[#0C6E8A]/30">
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between py-3.5 sm:py-4 lg:py-5 text-left gap-3 sm:gap-4 group"
+        className="w-full flex items-center justify-between py-3.5 sm:py-4 lg:py-5 text-left gap-3 sm:gap-4 group rounded-none"
       >
         <span className="text-[#1180C5] text-xs sm:text-sm lg:text-base font-semibold leading-snug group-hover:opacity-80 transition-opacity pr-2">
           {question}
