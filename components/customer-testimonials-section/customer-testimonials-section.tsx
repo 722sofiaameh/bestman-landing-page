@@ -64,7 +64,7 @@ export const CustomerTestimonialsSection = (): JSX.Element => {
   return (
     <section className="flex justify-center py-0 pb-[121px] px-4 md:px-[120px]">
       <div className="flex flex-col max-w-[1200px] w-full items-center px-[15px]">
-        <div className="flex flex-col items-center justify-center gap-[50px] w-full translate-y-[-1rem] animate-fade-in opacity-0">
+        <div className="flex flex-col items-center justify-center gap-[50px] w-full -translate-y-4 animate-fade-in opacity-0">
           <header className="flex flex-col items-center gap-5 w-full">
             <div className="flex flex-col items-center w-full">
               <p className="[font-family:'Plus_Jakarta_Sans',Helvetica] font-semibold text-[#0c6e8a] text-base text-center tracking-[-0.42px] leading-[22.4px]">
@@ -79,7 +79,7 @@ export const CustomerTestimonialsSection = (): JSX.Element => {
             </div>
           </header>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px] w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px] w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="flex-1 border-0 shadow-none cursor-pointer">
                 <CardContent className="flex flex-col gap-[30px] p-5 bg-neutral-50">
@@ -114,7 +114,7 @@ export const CustomerTestimonialsSection = (): JSX.Element => {
             ))}
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-[30px] py-[59px] w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+          <div className="flex flex-col items-center justify-center gap-[30px] py-[59px] w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
             <div className="flex flex-col items-center w-full">
               <p className="font-brentor-template-framer-website-plus-jakarta-sans-regular font-[number:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-weight)] text-[#0c6e8a] text-[length:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-size)] text-center tracking-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-letter-spacing)] leading-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-line-height)] [font-style:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-style)]">
                 Trusted by Industry Leaders

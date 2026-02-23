@@ -27,7 +27,7 @@ export const KeyMetricsSection = (): JSX.Element => {
           </div>
 
           <div className="flex flex-col items-start justify-center gap-12 md:gap-16 lg:gap-20 flex-1 w-full">
-            <div className="flex flex-col items-start justify-center gap-4 md:gap-5 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+            <div className="flex flex-col items-start justify-center gap-4 md:gap-5 w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
               <div className="flex flex-col items-start w-full">
                 <h3 className="font-semibold text-[28px] md:text-[34px] lg:text-[38px] tracking-[-1.14px] leading-[1.3] md:leading-[49.4px]">
                   <span className="text-white tracking-[-0.43px]">
@@ -53,7 +53,7 @@ export const KeyMetricsSection = (): JSX.Element => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-4 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-4 w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
               {metricsData.map((metric, index) => (
                 <div
                   key={index}

@@ -52,7 +52,7 @@ export const MissionVisionSection = (): JSX.Element => {
           </div>
 
           <div className="relative z-10 flex flex-col gap-16 lg:flex-row lg:gap-[150px]">
-            <div className="flex gap-[30px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+            <div className="flex gap-[30px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
               <div className="relative h-auto min-h-[176px] w-0.5">
                 <div className="absolute top-0 left-0 right-0 h-1/2 bg-[#0C6E8A]" />
                 <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-[#FFFFFF26]" />
@@ -62,7 +62,7 @@ export const MissionVisionSection = (): JSX.Element => {
                 {missionVisionData.map((item, index) => (
                   <Card
                     key={item.title}
-                    className="border-transparent bg-transparent shadow-none translate-y-[-1rem] animate-fade-in opacity-0"
+                    className="border-transparent bg-transparent shadow-none -translate-y-4 animate-fade-in opacity-0"
                     style={
                       {
                         "--animation-delay": `${400 + index * 200}ms`,
@@ -82,11 +82,11 @@ export const MissionVisionSection = (): JSX.Element => {
               </div>
             </div>
 
-            <div className="flex max-w-[535px] flex-col gap-[39px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:800ms]">
+            <div className="flex max-w-[535px] flex-col gap-[39px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:800ms]">
               {servicesData.map((service, index) => (
                 <Card
                   key={service.title}
-                  className="border-transparent bg-transparent shadow-none translate-y-[-1rem] animate-fade-in opacity-0"
+                  className="border-transparent bg-transparent shadow-none -translate-y-4 animate-fade-in opacity-0"
                   style={
                     {
                       "--animation-delay": `${1000 + index * 200}ms`,

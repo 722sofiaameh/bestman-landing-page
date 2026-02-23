@@ -47,7 +47,7 @@ export const CoreValuesSection = (): JSX.Element => {
   return (
     <section className="flex items-center justify-center py-[120px] px-4 md:px-8 lg:px-[120px]">
       <div className="flex flex-col items-center gap-[40px] w-full max-w-[1200px]">
-        <header className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">
+        <header className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:0ms]">
           <div className="flex flex-col gap-5 flex-1">
             <div className="flex flex-col items-start">
               <p className="font-semibold text-[#0c6e8a] text-sm tracking-[-0.42px] leading-[22.4px] [font-family:'Plus_Jakarta_Sans',Helvetica]">
@@ -80,7 +80,7 @@ export const CoreValuesSection = (): JSX.Element => {
           {coreValues.map((value, index) => (
             <Card
               key={value.number}
-              className="bg-neutral-50 border-0 shadow-none translate-y-[-1rem] animate-fade-in opacity-0"
+              className="bg-neutral-50 border-0 shadow-none -translate-y-4 animate-fade-in opacity-0"
               style={
                 {
                   "--animation-delay": `${(index + 1) * 100}ms`,

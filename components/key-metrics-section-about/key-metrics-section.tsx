@@ -21,14 +21,14 @@ export const KeyMetricsSection = (): JSX.Element => {
     <section className="relative flex items-center justify-center py-[120px] px-4 md:px-8 lg:px-[120px]">
       <div className="w-full max-w-[1200px] px-[15px]">
         <div className="flex flex-col lg:flex-row items-start lg:items-start justify-center gap-8 lg:gap-[200px]">
-          <aside className="w-full lg:w-[200px] flex-shrink-0 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">
+          <aside className="w-full lg:w-[200px] flex-shrink-0 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:0ms]">
             <h2 className="font-brentor-template-framer-website-semantic-heading-6 font-semibold text-sm  text-[#1180c5]">
               Trusted Valve Solutions Across the Entire Lifecycle
             </h2>
           </aside>
 
           <div className="flex flex-col w-full lg:w-[770px] items-start justify-center gap-[80px]">
-            <div className="flex flex-col items-start gap-[19px] w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+            <div className="flex flex-col items-start gap-[19px] w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
               <div className="flex flex-col items-start w-full">
                 <h3 className=" font-semibold text-[#1180c5] text-2xl md:text-[38px] tracking-[-0.43px] leading-tight md:leading-[49.4px]">
                   From procurement and commissioning to testing, maintenance,
@@ -52,7 +52,7 @@ export const KeyMetricsSection = (): JSX.Element => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
               {metricsData.map((metric, index) => (
                 <Card
                   key={index}

@@ -20,7 +20,7 @@ export default function AboutPage() {
         <HeroSection />
       </div>
       <section className="relative w-full overflow-hidden">
-        <div className="relative w-full h-[600px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+        <div className="relative w-full h-[600px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
           <div className="flex flex-col items-start justify-center h-full w-full bg-[url(/Video%20Section.svg)] bg-cover bg-center bg-no-repeat" />
           {/* <div className="absolute inset-0 bg-[#1180c5] opacity-20" /> */}
         </div>

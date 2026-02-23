@@ -24,7 +24,7 @@ export const FooterSection = (): JSX.Element => {
       <div className="flex flex-col w-full max-w-[1200px] items-center justify-center gap-8 md:gap-10 px-4 md:px-[15px] py-0">
         <div className="flex flex-col items-start gap-0 w-full">
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between pt-0 pb-5 px-0 w-full border-b border-[#dde0e3] gap-6 md:gap-0">
-            <div className="flex flex-col max-w-full md:max-w-[220px] items-start gap-4 md:gap-[19.2px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+            <div className="flex flex-col max-w-full md:max-w-[220px] items-start gap-4 md:gap-[19.2px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
               <img
                 className="flex-[0_0_auto] h-8 md:h-auto"
                 alt="Bestman International Logo"
@@ -35,7 +35,7 @@ export const FooterSection = (): JSX.Element => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-end gap-3 sm:gap-[20.7px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms] w-full md:w-auto">
+            <div className="flex flex-col sm:flex-row items-start sm:items-end gap-3 sm:gap-[20.7px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms] w-full md:w-auto">
               <a
                 href="mailto:info@bestmaninternational.com"
                 className="cursor-pointer inline-flex items-center gap-2.5 transition-opacity hover:opacity-70"
@@ -66,7 +66,7 @@ export const FooterSection = (): JSX.Element => {
           <div className="flex flex-col lg:flex-row items-start justify-center mt-6 gap-8 lg:gap-20 w-full">
             <div className="flex flex-col sm:flex-row w-full lg:w-[639px] items-start justify-between pt-5 pb-0 px-0 gap-6 sm:gap-8">
               <nav
-                className="flex flex-col items-start gap-[7px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]"
+                className="flex flex-col items-start gap-[7px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:600ms]"
                 aria-label="Company"
               >
                 <h3 className="font-brentor-template-framer-website-semantic-heading-6 font-[number:var(--brentor-template-framer-website-semantic-heading-6-font-weight)] text-[#1180c5] text-[length:var(--brentor-template-framer-website-semantic-heading-6-font-size)] tracking-[var(--brentor-template-framer-website-semantic-heading-6-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-heading-6-line-height)] whitespace-nowrap [font-style:var(--brentor-template-framer-website-semantic-heading-6-font-style)]">
@@ -87,7 +87,7 @@ export const FooterSection = (): JSX.Element => {
               </nav>
 
               <nav
-                className="flex flex-col items-start gap-[7px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:700ms]"
+                className="flex flex-col items-start gap-[7px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:700ms]"
                 aria-label="Social Media"
               >
                 <h3 className="font-brentor-template-framer-website-semantic-heading-6 font-[number:var(--brentor-template-framer-website-semantic-heading-6-font-weight)] text-[#1180c5] text-[length:var(--brentor-template-framer-website-semantic-heading-6-font-size)] tracking-[var(--brentor-template-framer-website-semantic-heading-6-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-heading-6-line-height)] whitespace-nowrap [font-style:var(--brentor-template-framer-website-semantic-heading-6-font-style)]">
@@ -107,7 +107,7 @@ export const FooterSection = (): JSX.Element => {
                 </ul>
               </nav>
 
-              <div className="flex flex-col w-full sm:w-[269px] gap-[15px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:800ms]">
+              <div className="flex flex-col w-full sm:w-[269px] gap-[15px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:800ms]">
                 <h3 className="font-brentor-template-framer-website-semantic-heading-6 font-[number:var(--brentor-template-framer-website-semantic-heading-6-font-weight)] text-[#1180c5] text-[length:var(--brentor-template-framer-website-semantic-heading-6-font-size)] tracking-[var(--brentor-template-framer-website-semantic-heading-6-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-heading-6-line-height)] whitespace-nowrap [font-style:var(--brentor-template-framer-website-semantic-heading-6-font-style)]">
                   Contact us anytime
                 </h3>
@@ -130,7 +130,7 @@ export const FooterSection = (): JSX.Element => {
               className="hidden lg:block h-full min-h-[200px] bg-[#DDE0E3]"
             />
 
-            <div className="flex flex-col max-w-full lg:max-w-[370px] w-full lg:w-[370px] justify-center gap-5 pt-[19.2px] pb-[0.01px] px-0 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:900ms]">
+            <div className="flex flex-col max-w-full lg:max-w-[370px] w-full lg:w-[370px] justify-center gap-5 pt-[19.2px] pb-[0.01px] px-0 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:900ms]">
               <div className="flex flex-col max-w-full lg:max-w-[330px]">
                 <p className="font-brentor-template-framer-website-semantic-heading-6 font-[number:var(--brentor-template-framer-website-semantic-heading-6-font-weight)] text-[#1180c5] text-sm md:text-[length:var(--brentor-template-framer-website-semantic-heading-6-font-size)] tracking-[var(--brentor-template-framer-website-semantic-heading-6-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-heading-6-line-height)] [font-style:var(--brentor-template-framer-website-semantic-heading-6-font-style)]">
                   Stay informed about our latest products, engineering
@@ -159,7 +159,7 @@ export const FooterSection = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center sm:justify-between pt-[19px] pb-0 px-0 w-full border-t border-[#dde0e3] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1000ms]">
+        <div className="flex items-center justify-center sm:justify-between pt-[19px] pb-0 px-0 w-full border-t border-[#dde0e3] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:1000ms]">
           <p className="font-brentor-template-framer-website-plus-jakarta-sans-regular font-[number:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-weight)] text-brentor-templateframerwebsiteshuttle-gray text-sm md:text-[length:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-size)] tracking-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-letter-spacing)] leading-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-line-height)] [font-style:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-style)] text-center sm:text-left">
             © Bestman. All Rights Reserved
           </p>

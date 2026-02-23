@@ -124,7 +124,7 @@ export const CoreProductsSection = (): JSX.Element => {
           ))}
 
           <Card
-            className="flex flex-col rounded-none flex-1 min-w-0 md:min-w-[280px] lg:min-w-[570px] border-0 shadow-none overflow-hidden translate-y-[-1rem] animate-fade-in opacity-0"
+            className="flex flex-col rounded-none flex-1 min-w-0 md:min-w-[280px] lg:min-w-[570px] border-0 shadow-none overflow-hidden -translate-y-4 animate-fade-in opacity-0"
             style={{ "--animation-delay": "600ms" } as React.CSSProperties}
           >
             <CardContent className="flex flex-col justify-end gap-5 p-[30px] h-full min-h-[400px] relative">
