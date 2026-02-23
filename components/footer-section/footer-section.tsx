@@ -20,7 +20,7 @@ const socialLinks = [
 
 export const FooterSection = (): JSX.Element => {
   return (
-    <footer className="flex flex-col w-full items-center justify-center pt-12 md:pt-16 lg:pt-[100px] pb-5 px-0 bg-greyscale-0">
+    <footer className="flex flex-col w-full items-center justify-center pt-12 md:pt-16 lg:pt-[100px] pb-48 lg:pb-5 px-0 bg-greyscale-0">
       <div className="flex flex-col w-full max-w-[1200px] items-center justify-center gap-8 md:gap-10 px-4 md:px-[15px] py-0">
         <div className="flex flex-col items-start gap-0 w-full">
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between pt-0 pb-5 px-0 w-full border-b border-[#dde0e3] gap-6 md:gap-0">

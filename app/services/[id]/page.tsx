@@ -88,11 +88,11 @@ export default function ServiceDetailsPage({ params }: ServiceDetailsPageProps) 
   return (
     <div className="flex flex-col w-full items-start relative bg-white overflow-hidden">
       <Navbar backgroundColor="bg-[#1180C5]" />
-      <div className="w-full mt-24 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+      <div className="w-full mt-16 sm:mt-20 md:mt-24 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
         <ServiceDetailHeroSection service={service} />
 
         {/* Content Sections */}
-        <div className="w-full py-16 px-4 md:px-8 lg:px-[180px]">
+        <div className="w-full py-12 sm:py-14 md:py-16 px-4 sm:px-6 md:px-8 lg:px-[180px]">
           <div className="max-w-[1200px] mx-auto space-y-12">
             {contentSections.map((section, index) => (
               <div key={index} className="space-y-4">

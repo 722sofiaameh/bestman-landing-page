@@ -8,7 +8,6 @@ interface ProductDetailsPageProps {
   };
 }
 
-// Product data - in a real app, this would come from an API or database
 const products = [
   {
     id: "1",
@@ -106,12 +105,16 @@ export default function ProductDetailsPage({ params }: ProductDetailsPageProps) 
       <div className="w-full -translate-y-4 animate-fade-in opacity-0">
         <Navbar />
       </div>
-      <div className="w-full mt-24 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+
+      <div className="w-full mt-16 sm:mt-20 md:mt-24 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+
         {/* Header Section */}
-        <div className="flex flex-col items-center justify-center py-12 px-4 md:px-8 lg:px-[120px]">
+        <div className="flex flex-col items-center justify-center py-6 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-[120px]">
           <div className="w-full max-w-[1200px]">
-            <p className="text-base text-[#0C6E8A] font-semibold mb-4 text-center">Product Details</p>
-            <h1 className="text-4xl md:text-4xl lg:text-4xl font-bold text-[#1180C5] text-center">
+            <p className="text-xs sm:text-sm lg:text-base text-[#0C6E8A] font-semibold mb-2 sm:mb-3 lg:mb-4 text-center">
+              Product Details
+            </p>
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1180C5] text-center leading-tight">
               {product.title}
             </h1>
           </div>
@@ -123,24 +126,24 @@ export default function ProductDetailsPage({ params }: ProductDetailsPageProps) 
             <img
               src={product.image}
               alt={product.title}
-              className="w-full h-[400px] md:h-[500px] lg:h-[500px] object-cover"
+              className="w-full h-[220px] sm:h-[300px] md:h-[400px] lg:h-[500px] object-cover"
             />
           </div>
         </div>
 
         {/* Content Sections */}
-        <div className="w-full py-16 px-4 md:px-8 lg:px-[200px]">
-          <div className="max-w-[1200px] mx-auto space-y-12">
+        <div className="w-full py-10 sm:py-12 md:py-14 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[200px]">
+          <div className="max-w-[1200px] mx-auto space-y-8 sm:space-y-10 lg:space-y-12">
             {contentSections.map((section, index) => (
-              <div key={index} className="space-y-4">
-                <h2 className="text-xl md:text-2xl font-bold text-[#1180C5] leading-tight">
+              <div key={index} className="space-y-3 sm:space-y-4">
+                <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-[#1180C5] leading-tight">
                   {section.heading}
                 </h2>
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   {section.paragraphs.map((paragraph, pIndex) => (
                     <p
                       key={pIndex}
-                      className="text-gray-700 text-base leading-relaxed"
+                      className="text-gray-700 text-xs sm:text-sm lg:text-base leading-relaxed"
                     >
                       {paragraph}
                     </p>
@@ -151,6 +154,7 @@ export default function ProductDetailsPage({ params }: ProductDetailsPageProps) 
           </div>
         </div>
       </div>
+
       <div className="w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:1400ms]">
         <CallToActionSection />
       </div>

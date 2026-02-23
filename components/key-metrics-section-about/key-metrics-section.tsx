@@ -18,19 +18,19 @@ const metricsData = [
 
 export const KeyMetricsSection = (): JSX.Element => {
   return (
-    <section className="relative flex items-center justify-center py-[120px] px-4 md:px-8 lg:px-[120px]">
+    <section className="relative flex items-center justify-center py-[60px] sm:py-[80px] lg:py-[120px] px-4 md:px-8 lg:px-[120px]">
       <div className="w-full max-w-[1200px] px-[15px]">
-        <div className="flex flex-col lg:flex-row items-start lg:items-start justify-center gap-8 lg:gap-[200px]">
+        <div className="flex flex-col lg:flex-row items-start lg:items-start justify-center gap-6 sm:gap-8 lg:gap-[200px]">
           <aside className="w-full lg:w-[200px] flex-shrink-0 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:0ms]">
-            <h2 className="font-brentor-template-framer-website-semantic-heading-6 font-semibold text-sm  text-[#1180c5]">
+            <h2 className="font-brentor-template-framer-website-semantic-heading-6 font-semibold text-xs sm:text-sm lg:text-sm text-[#1180c5]">
               Trusted Valve Solutions Across the Entire Lifecycle
             </h2>
           </aside>
 
-          <div className="flex flex-col w-full lg:w-[770px] items-start justify-center gap-[80px]">
+          <div className="flex flex-col w-full lg:w-[770px] items-start justify-center gap-10 sm:gap-14 lg:gap-[80px]">
             <div className="flex flex-col items-start gap-[19px] w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
               <div className="flex flex-col items-start w-full">
-                <h3 className=" font-semibold text-[#1180c5] text-2xl md:text-[38px] tracking-[-0.43px] leading-tight md:leading-[49.4px]">
+                <h3 className="font-semibold text-[#1180c5] text-xl sm:text-2xl md:text-[38px] tracking-[-0.43px] leading-tight md:leading-[49.4px]">
                   From procurement and commissioning to testing, maintenance,
                   and refurbishment, we support our{" "}
                   <span className="text-[#0c6e8a]">
@@ -41,18 +41,16 @@ export const KeyMetricsSection = (): JSX.Element => {
               </div>
 
               <div className="max-w-[570px] w-full">
-                <p className=" font-normal text-[#1180c5] text-base leading-[22.4px]">
+                <p className="font-normal text-[#1180c5] text-sm sm:text-base leading-[1.6] sm:leading-[22.4px]">
                   Powering critical operations with reliable valve technology
-                  and engineering expertise.
-                 
-                  We partner with industry leaders to deliver safe, efficient,
-                  and standards-driven solutions that keep operations running
-                  without compromise.
+                  and engineering expertise. We partner with industry leaders to
+                  deliver safe, efficient, and standards-driven solutions that
+                  keep operations running without compromise.
                 </p>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
               {metricsData.map((metric, index) => (
                 <Card
                   key={index}
@@ -60,12 +58,12 @@ export const KeyMetricsSection = (): JSX.Element => {
                 >
                   <CardContent className="flex flex-col items-center justify-center gap-1 p-0">
                     <div className="flex flex-col items-start w-full">
-                      <span className=" font-semibold text-[#1180c5] text-[46px] tracking-[-0.42px] leading-[59.8px]">
+                      <span className="font-semibold text-[#1180c5] text-[28px] sm:text-[36px] md:text-[46px] tracking-[-0.42px] leading-tight sm:leading-[1.3] md:leading-[59.8px]">
                         {metric.value}
                       </span>
                     </div>
                     <div className="flex items-start justify-start w-full">
-                      <p className="max-w-[200px] text-start  font-normal text-[#1180c5] text-base tracking-[-0.48px] leading-[25.6px]">
+                      <p className="max-w-[200px] text-start font-normal text-[#1180c5] text-xs sm:text-sm md:text-base tracking-[-0.48px] leading-[1.5] sm:leading-[1.6] md:leading-[25.6px]">
                         {metric.label}
                       </p>
                     </div>

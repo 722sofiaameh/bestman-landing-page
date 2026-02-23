@@ -62,34 +62,34 @@ const companyLogos = [
 
 export const CustomerTestimonialsSection = (): JSX.Element => {
   return (
-    <section className="flex justify-center py-0 pb-[121px] px-4 md:px-[120px]">
-      <div className="flex flex-col max-w-[1200px] w-full items-center px-[15px]">
-        <div className="flex flex-col items-center justify-center gap-[50px] w-full -translate-y-4 animate-fade-in opacity-0">
-          <header className="flex flex-col items-center gap-5 w-full">
+    <section className="flex justify-center py-0 pb-12 sm:pb-16 md:pb-20 lg:pb-[121px] px-4 sm:px-6 md:px-8 lg:px-[120px]">
+      <div className="flex flex-col max-w-[1200px] w-full items-center px-4 sm:px-[15px]">
+        <div className="flex flex-col items-center justify-center gap-8 sm:gap-10 md:gap-[50px] w-full -translate-y-4 animate-fade-in opacity-0">
+          <header className="flex flex-col items-center gap-3 sm:gap-4 md:gap-5 w-full">
             <div className="flex flex-col items-center w-full">
-              <p className="[font-family:'Plus_Jakarta_Sans',Helvetica] font-semibold text-[#0c6e8a] text-base text-center tracking-[-0.42px] leading-[22.4px]">
+              <p className="[font-family:'Plus_Jakarta_Sans',Helvetica] font-semibold text-[#0c6e8a] text-xs sm:text-sm md:text-base text-center tracking-[-0.42px] leading-[20px] sm:leading-[22.4px]">
                 Testimonials
               </p>
             </div>
 
-            <div className="flex flex-col items-center max-w-[530px]">
-              <h2 className="font-brentor-template-framer-website-semantic-heading-2 text-[38px] font-semibold tracking-[-0.43px] leading-[59.8px] text-[#1180c5]">
+            <div className="flex flex-col items-center max-w-full sm:max-w-[530px] px-2 sm:px-4">
+              <h2 className="font-brentor-template-framer-website-semantic-heading-2 text-xl sm:text-2xl md:text-3xl lg:text-[38px] font-semibold tracking-[-0.43px] leading-tight sm:leading-[1.3] md:leading-[50px] lg:leading-[59.8px] text-[#1180c5] text-center">
                 Hear from our people.
               </h2>
             </div>
           </header>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px] w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-[30px] w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="flex-1 border-0 shadow-none cursor-pointer">
-                <CardContent className="flex flex-col gap-[30px] p-5 bg-neutral-50">
-                  <div className="flex flex-col gap-[19.39px]">
+                <CardContent className="flex flex-col gap-5 sm:gap-[30px] p-4 sm:p-5 bg-neutral-50">
+                  <div className="flex flex-col gap-3 sm:gap-[19.39px]">
                     <div className="flex items-center gap-0.5">
                       {Array.from({ length: testimonial.rating }).map(
                         (_, starIndex) => (
                           <div
                             key={starIndex}
-                            className="w-4 h-4 flex items-center justify-center overflow-hidden"
+                            className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex items-center justify-center overflow-hidden"
                           >
                             <img
                               className="w-[95.11%] h-[96.48%]"
@@ -101,12 +101,12 @@ export const CustomerTestimonialsSection = (): JSX.Element => {
                       )}
                     </div>
 
-                    <p className="font-brentor-template-framer-website-plus-jakarta-sans-regular font-[number:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-weight)] text-[#1180c5] text-[length:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-size)] tracking-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-letter-spacing)] leading-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-line-height)] [font-style:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-style)]">
+                    <p className="font-brentor-template-framer-website-plus-jakarta-sans-regular font-[number:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-weight)] text-[#1180c5] text-xs sm:text-[length:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-size)] tracking-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-letter-spacing)] leading-[1.6] sm:leading-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-line-height)] [font-style:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-style)]">
                       &quot;{testimonial.quote}&quot;
                     </p>
                   </div>
 
-                  <p className="font-brentor-template-framer-website-plus-jakarta-sans-regular font-[number:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-weight)] text-[#5a6272] text-[length:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-size)] tracking-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-letter-spacing)] leading-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-line-height)] [font-style:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-style)]">
+                  <p className="font-brentor-template-framer-website-plus-jakarta-sans-regular font-[number:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-weight)] text-[#5a6272] text-xs sm:text-[length:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-size)] tracking-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-letter-spacing)] leading-[1.6] sm:leading-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-line-height)] [font-style:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-style)]">
                     {testimonial.companies}
                   </p>
                 </CardContent>
@@ -114,21 +114,21 @@ export const CustomerTestimonialsSection = (): JSX.Element => {
             ))}
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-[30px] py-[59px] w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
+          <div className="flex flex-col items-center justify-center gap-5 sm:gap-[30px] py-8 sm:py-10 lg:py-[59px] w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
             <div className="flex flex-col items-center w-full">
-              <p className="font-brentor-template-framer-website-plus-jakarta-sans-regular font-[number:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-weight)] text-[#0c6e8a] text-[length:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-size)] text-center tracking-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-letter-spacing)] leading-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-line-height)] [font-style:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-style)]">
+              <p className="font-brentor-template-framer-website-plus-jakarta-sans-regular font-[number:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-weight)] text-[#0c6e8a] text-xs sm:text-[length:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-size)] text-center tracking-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-letter-spacing)] leading-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-line-height)] [font-style:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-style)]">
                 Trusted by Industry Leaders
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-10 w-full">
+            <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 lg:gap-10 w-full">
               {companyLogos.map((logo, index) => (
                 <div
                   key={index}
-                  className="w-[161.66px] h-[30px] flex items-center justify-center"
+                  className="w-[120px] h-[24px] sm:w-[140px] sm:h-[26px] lg:w-[161.66px] lg:h-[30px] flex items-center justify-center"
                 >
                   {logo.vectors ? (
-                    <div className="relative w-[105px] h-[30px]">
+                    <div className="relative w-[80px] h-[24px] sm:w-[95px] sm:h-[27px] lg:w-[105px] lg:h-[30px]">
                       {logo.vectors.map((vector, vectorIndex) => (
                         <img
                           key={vectorIndex}

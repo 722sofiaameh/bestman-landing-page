@@ -11,11 +11,11 @@ export default function WhyChooseUsPage() {
   return (
     <div className="flex flex-col w-full items-start relative bg-white overflow-hidden">
       <Navbar backgroundColor="bg-[#1180C5]" />
-      <div className="w-full -translate-y-4 mt-24 animate-fade-in opacity-0 [--animation-delay:200ms]">
+      <div className="w-full -translate-y-4 mt-16 sm:mt-20 md:mt-24 animate-fade-in opacity-0 [--animation-delay:200ms]">
         <WhyChooseUsHeroSection />
       </div>
       <section className="relative w-full overflow-hidden" style={{ marginTop: '-40px', display: 'block' }}>
-        <div className="relative w-full h-[540px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
+        <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[540px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
           <div className="flex flex-col items-start justify-center h-full w-full bg-[url(/Image%20Section.svg)] bg-cover bg-center bg-no-repeat" />
           {/* <div className="absolute inset-0 bg-[#1180c5] opacity-20" /> */}
         </div>

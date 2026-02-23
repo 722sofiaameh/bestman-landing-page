@@ -66,26 +66,26 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
     <div className="border-b border-[#0C6E8A]/30">
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between py-5 text-left gap-4 group"
+        className="w-full flex items-center justify-between py-3.5 sm:py-4 lg:py-5 text-left gap-3 sm:gap-4 group"
       >
-        <span className="text-[#1180C5] text-base font-semibold leading-snug group-hover:opacity-80 transition-opacity">
+        <span className="text-[#1180C5] text-xs sm:text-sm lg:text-base font-semibold leading-snug group-hover:opacity-80 transition-opacity pr-2">
           {question}
         </span>
-            <img
-              src="/arrow-down.svg"
-              alt="Arrow down"
-              className={`w-5 h-5 shrink-0 transition-transform duration-300 ${
-                isOpen ? "rotate-180" : ""
-              }`}
-            />
+        <img
+          src="/arrow-down.svg"
+          alt="Arrow down"
+          className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 transition-transform duration-300 ${
+            isOpen ? "rotate-180" : ""
+          }`}
+        />
       </button>
 
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? "max-h-48 pb-5" : "max-h-0"
+          isOpen ? "max-h-48 pb-4 sm:pb-5" : "max-h-0"
         }`}
       >
-        <p className="text-gray-600 text-sm leading-relaxed">{answer}</p>
+        <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">{answer}</p>
       </div>
     </div>
   );
@@ -100,20 +100,20 @@ export const FAQSection = (): JSX.Element => {
   const toggle = (id: number) => setOpenId(openId === id ? null : id);
 
   return (
-    <section className="w-full bg-[#f5f5f3] py-[120px] px-4 md:px-8 lg:px-[120px]">
+    <section className="w-full bg-[#f5f5f3] py-10 sm:py-12 md:py-16 lg:py-[120px] px-4 sm:px-6 md:px-8 lg:px-[120px]">
       <div className="max-w-[1200px] mx-auto">
         {/* Header */}
-        <div className="text-center mb-14">
-          <p className="text-[#0C6E8A] text-sm font-semibold  uppercase mb-4">
+        <div className="text-center mb-7 sm:mb-10 md:mb-12 lg:mb-14">
+          <p className="text-[#0C6E8A] text-[10px] sm:text-xs lg:text-sm font-semibold uppercase mb-2 sm:mb-3 lg:mb-4">
             FAQ
           </p>
-          <h2 className="text-[#1180C5] text-4xl md:text-5xl font-bold">
+          <h2 className="text-[#1180C5] text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold">
             Customers frequently ask.
           </h2>
         </div>
 
         {/* Two-column FAQ grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-12 lg:gap-x-16 gap-y-0">
           {/* Left column */}
           <div>
             {leftColumn.map((faq) => (

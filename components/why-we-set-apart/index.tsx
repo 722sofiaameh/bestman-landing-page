@@ -39,43 +39,41 @@ const keyPoints = [
 
 export const WhyWeSetApart = () => {
     return (
-        <section className="relative flex items-center justify-center py-[120px] px-4 md:px-8 lg:px-[120px]">
+        <section className="relative flex items-center justify-center py-[60px] sm:py-[80px] lg:py-[120px] px-4 md:px-8 lg:px-[120px]">
             <div className="w-full max-w-[1200px] px-[15px]">
-                <div className="flex flex-col lg:flex-row items-start lg:items-start justify-center gap-8 lg:gap-[200px]">
+                <div className="flex flex-col lg:flex-row items-start lg:items-start justify-center gap-6 sm:gap-8 lg:gap-[200px]">
                     <aside className="w-full lg:w-[200px] flex-shrink-0 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:0ms]">
-                        <h2 className="font-brentor-template-framer-website-semantic-heading-6 font-semibold     font-[number:var(--brentor-template-framer-website-semantic-heading-6-font-weight)] text-[#1180c5] text-[length:var(--brentor-template-framer-website-semantic-heading-6-font-size)] tracking-[var(--brentor-template-framer-website-semantic-heading-6-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-heading-6-line-height)] [font-style:var(--brentor-template-framer-website-semantic-heading-6-font-style)]">
-                        What sets us apart
+                        <h2 className="font-brentor-template-framer-website-semantic-heading-6 font-semibold font-[number:var(--brentor-template-framer-website-semantic-heading-6-font-weight)] text-[#1180c5] text-xs sm:text-[length:var(--brentor-template-framer-website-semantic-heading-6-font-size)] tracking-[var(--brentor-template-framer-website-semantic-heading-6-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-heading-6-line-height)] [font-style:var(--brentor-template-framer-website-semantic-heading-6-font-style)]">
+                            What sets us apart
                         </h2>
                     </aside>
 
-                    <div className="flex flex-col w-full lg:w-[770px] items-start justify-center gap-[80px]">
+                    <div className="flex flex-col w-full lg:w-[770px] items-start justify-center gap-10 sm:gap-14 lg:gap-[80px]">
                         <div className="flex flex-col items-start gap-[19px] w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
                             <div className="flex flex-col items-start w-full">
-                                <h3 className=" font-semibold text-[#1180c5] text-2xl md:text-[38px] tracking-[-0.43px] leading-tight md:leading-[49.4px]">
-                                    Why we stand out in the valve and engineering industry?
+                                <h3 className="font-semibold text-[#1180c5] text-xl sm:text-2xl md:text-[38px] tracking-[-0.43px] leading-tight md:leading-[49.4px]">
+                                    Why we stand out in the valve and engineering industry?{" "}
                                     <span className="text-[#0c6e8a]">
                                         At Bestman, we are committed to operational excellence, safety compliance, and delivering measurable performance across every project lifecycle.
                                     </span>
                                 </h3>
                             </div>
-
-                          
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms] items-stretch">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-7 lg:gap-8 w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms] items-stretch">
                             {keyPoints.map((point) => (
                                 <div key={point.id} className="flex flex-col items-start h-full">
-                                    <div className="flex flex-col items-start w-full mb-3">
-                                        <span className="font-semibold text-[#0C6E8A] text-[24px] tracking-[-0.42px] leading-[59.8px]">
+                                    <div className="flex flex-col items-start w-full mb-2 sm:mb-3">
+                                        <span className="font-semibold text-[#0C6E8A] text-[18px] sm:text-[20px] lg:text-[24px] tracking-[-0.42px] leading-[1.4] sm:leading-[1.3] lg:leading-[59.8px]">
                                             {point.number}
                                         </span>
                                     </div>
-                                    <div className="w-full h-0.5 bg-[#0C6E8A] mb-4" />
+                                    <div className="w-full h-0.5 bg-[#0C6E8A] mb-3 sm:mb-4" />
                                     <div className="flex flex-col items-start w-full flex-1">
-                                        <h4 className="font-bold text-[#1180c5] text-lg md:text-xl mb-2">
+                                        <h4 className="font-bold text-[#1180c5] text-base sm:text-lg lg:text-xl mb-1.5 sm:mb-2">
                                             {point.title}
                                         </h4>
-                                        <p className="text-gray-600 text-sm leading-relaxed flex-1">
+                                        <p className="text-gray-600 text-xs sm:text-sm leading-relaxed flex-1">
                                             {point.description}
                                         </p>
                                     </div>

@@ -36,29 +36,33 @@ const servicesData = [
 
 export const MissionVisionSection = (): JSX.Element => {
   return (
-    <section className="relative w-full bg-[#1180c5] px-4 md:px-8 lg:px-[120px]">
+    <section className="relative w-full overflow-hidden bg-[#1180c5] px-4 md:px-8 lg:px-[120px]">
       <div className="relative mx-auto w-full max-w-[1200px]">
         <div className="relative w-full py-20 md:py-[100px]">
-          <div className="absolute inset-0 left-1/2 w-[150%] overflow-hidden">
+          
+          {/* Background */}
+          <div className="absolute inset-0 left-1/2 w-[150%] max-lg:-translate-x-1/2 overflow-hidden">
             <div
-              className="absolute inset-0  bg-no-repeat"
+              className="absolute inset-0 bg-no-repeat bg-cover bg-center"
               style={{
                 backgroundImage:
                   "url(/Image%20Wrapper%20%281%29.svg)",
               }}
             />
-            {/* <div className="absolute inset-0 bg-[#1180c5] opacity-60" />
-            <div className="absolute inset-0 bg-[linear-gradient(28deg,rgba(0,0,0,0.5)_0%,rgba(19,52,117,0.1)_100%)] opacity-60" /> */}
           </div>
 
-          <div className="relative z-10 flex flex-col gap-16 lg:flex-row lg:gap-[150px]">
-            <div className="flex gap-[30px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
-              <div className="relative h-auto min-h-[176px] w-0.5">
+          <div className="relative z-10 flex flex-col gap-16 max-lg:gap-12 lg:flex-row lg:gap-[150px]">
+            
+            {/* Mission & Vision */}
+            <div className="flex gap-[30px] max-md:gap-5 max-sm:gap-4 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+              
+              {/* Vertical Line - hide only on very small screens */}
+              <div className="relative h-auto min-h-[176px] w-0.5 max-sm:hidden">
                 <div className="absolute top-0 left-0 right-0 h-1/2 bg-[#0C6E8A]" />
                 <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-[#FFFFFF26]" />
               </div>
 
-              <div className="flex max-w-[500px] flex-col gap-[60px]">
+              <div className="flex max-w-[500px] max-sm:max-w-full flex-col gap-[60px] max-lg:gap-10">
                 {missionVisionData.map((item, index) => (
                   <Card
                     key={item.title}
@@ -70,19 +74,44 @@ export const MissionVisionSection = (): JSX.Element => {
                     }
                   >
                     <CardContent className="flex flex-col gap-5 p-0">
-                      <h2 className="font-brentor-template-framer-website-semantic-heading-2 text-[38px] font-semibold tracking-[-0.43px] leading-[59.8px] text-white">
+                      
+                      {/* Title — desktop untouched */}
+                      <h2 className="
+                        font-brentor-template-framer-website-semantic-heading-2
+                        text-[38px]
+                        max-md:text-[30px]
+                        max-sm:text-[24px]
+                        font-semibold
+                        tracking-[-0.43px]
+                        leading-[59.8px]
+                        max-md:leading-[44px]
+                        max-sm:leading-[34px]
+                        text-white
+                      ">
                         {item.title}
                       </h2>
-                      <p className="max-w-[450px] font-normal text-base leading-[22.4px] tracking-[0] text-white">
+
+                      {/* Description — desktop untouched */}
+                      <p className="
+                        max-w-[450px]
+                        max-sm:max-w-full
+                        font-normal
+                        text-base
+                        max-sm:text-sm
+                        leading-[22.4px]
+                        text-white
+                      ">
                         {item.description}
                       </p>
+
                     </CardContent>
                   </Card>
                 ))}
               </div>
             </div>
 
-            <div className="flex max-w-[535px] flex-col gap-[39px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:800ms]">
+            {/* Services */}
+            <div className="flex max-w-[535px] max-sm:max-w-full flex-col gap-[39px] max-lg:gap-8 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:800ms]">
               {servicesData.map((service, index) => (
                 <Card
                   key={service.title}
@@ -94,16 +123,43 @@ export const MissionVisionSection = (): JSX.Element => {
                   }
                 >
                   <CardContent className="flex flex-col gap-[9.2px] p-0">
-                    <h3 className="font-brentor-template-framer-website-semantic-heading-4 text-2xl font-semibold tracking-[-0.43px] leading-[49.4px] text-white">
+                    
+                    {/* Title — desktop untouched */}
+                    <h3 className="
+                      font-brentor-template-framer-website-semantic-heading-4
+                      text-2xl
+                      max-md:text-xl
+                      max-sm:text-lg
+                      font-semibold
+                      tracking-[-0.43px]
+                      leading-[49.4px]
+                      max-md:leading-[38px]
+                      max-sm:leading-[30px]
+                      text-white
+                    ">
                       {service.title}
                     </h3>
-                    <p className="max-w-[450px] font-normal text-sm leading-[22.4px] tracking-[0] text-white [font-family:'Plus_Jakarta_Sans',Helvetica]">
+
+                    {/* Description — desktop untouched */}
+                    <p className="
+                      max-w-[450px]
+                      max-sm:max-w-full
+                      font-normal
+                      text-sm
+                      max-sm:text-xs
+                      leading-[22.4px]
+                      max-sm:leading-[18px]
+                      text-white
+                      [font-family:'Plus_Jakarta_Sans',Helvetica]
+                    ">
                       {service.description}
                     </p>
+
                   </CardContent>
                 </Card>
               ))}
             </div>
+
           </div>
         </div>
       </div>

@@ -38,8 +38,8 @@ export const MissionVisionSection = ({ backgroundColor = "bg-greyscale-0" }: Mis
 
   return (
     <>
-      <header className={`w-full ${backgroundColor} fixed top-0 left-0 right-0 z-[9999] pb-4 border-b border-gray-100 lg:border-0 shadow-sm lg:shadow-none lg:pt-8`} style={{ position: 'fixed' }}>
-        <div className="flex w-full max-w-[1200px] mx-auto items-center justify-between px-4 md:px-[15px] py-4 md:py-3 lg:py-0">
+      <header className={`w-full ${backgroundColor} fixed top-0 left-0 right-0 z-[9999] pb-3 sm:pb-4 lg:border-0 shadow-sm lg:shadow-none lg:pt-8`} style={{ position: 'fixed' }}>
+        <div className="flex w-full max-w-[1200px] mx-auto items-center justify-between px-4 sm:px-6 md:px-[15px] py-3 sm:py-4 md:py-3 lg:py-0">
           <Link href="/">
             <img
               className="shrink-0 h-8 md:h-auto w-auto cursor-pointer"

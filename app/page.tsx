@@ -17,7 +17,7 @@ export default function Home() {
       <div className="w-full">
         <MissionVisionSection />
       </div>
-      <div className="w-full mt-28 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+      <div className="w-full mt-16 sm:mt-20 md:mt-24 lg:mt-28 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
         <HeroBannerSection />
       </div>
       <div className="w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">

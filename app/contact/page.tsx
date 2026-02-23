@@ -10,7 +10,7 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col w-full items-start relative bg-white overflow-hidden">
       <Navbar backgroundColor="bg-[#1180C5]" />
-      <div className="w-full mt-24 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+      <div className="w-full mt-16 sm:mt-20 md:mt-24 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
         <ContactHeroSection />
       </div>
       <div className="w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
