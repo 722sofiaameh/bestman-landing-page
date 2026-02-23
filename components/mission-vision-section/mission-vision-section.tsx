@@ -93,13 +93,13 @@ export const MissionVisionSection = ({ backgroundColor = "bg-greyscale-0" }: Mis
       {isMenuOpen && (
         <>
           <div
-            className="lg:hidden fixed inset-0 bg-black/40 z-[110] transition-opacity duration-300"
+            className="lg:hidden fixed inset-0 bg-black/40 z-[99998] transition-opacity duration-300"
             onClick={() => setIsMenuOpen(false)}
           />
 
           {/* Slide-in Mobile Menu */}
           <div
-            className={`lg:hidden fixed top-0 right-0 h-full w-[320px] max-w-[85vw] bg-white shadow-2xl z-[120] transform transition-transform duration-300 ease-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+            className={`lg:hidden fixed top-0 right-0 h-full w-[320px] max-w-[85vw] bg-white shadow-2xl z-[99999] transform transition-transform duration-300 ease-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"
               }`}
           >
             <div className="flex flex-col h-full">
@@ -124,6 +124,13 @@ export const MissionVisionSection = ({ backgroundColor = "bg-greyscale-0" }: Mis
               {/* Menu Content */}
               <nav className="flex-1 flex flex-col p-5 overflow-y-auto">
                 <div className="flex flex-col gap-1 mb-6">
+                  <Link
+                    href="/"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="cursor-pointer text-left font-semibold text-[#5A6272] text-base py-3 px-4 rounded-md hover:text-[#0c6e8a] hover:bg-[#0c6e8a]/5 transition-all duration-200"
+                  >
+                    Home
+                  </Link>
                   {navigationLinks.map((link, index) => (
                     <Link
                       key={index}
