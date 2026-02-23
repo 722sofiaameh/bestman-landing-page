@@ -11,6 +11,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "BESTMAN INTERNATIONAL LIMITED",
   description: "",
+  icons: {
+    icon: "/bestman.svg",
+  },
 };
 
 export default function RootLayout({

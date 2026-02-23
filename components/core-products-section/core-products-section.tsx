@@ -10,7 +10,7 @@ const products = [
     title: "Mobile Workshop",
     description:
       "We manufactures customized Container Workshops. These are made for on-site repair of Safety and Isolation Valves. Our Mobile Workshops are made from either 20'",
-    image: "/Image Wrapper.svg",
+    image: "/Image%20Wrapper.svg",
     linkColor: "text-[#1180c5]",
     underlineColor: "bg-[#1180c5]",
     isLarge: false,
@@ -20,7 +20,7 @@ const products = [
     title: "In Situ Valve Repair",
     description:
       "With over two decades of expertise in in-situ valve repair of our principal partner EFCO, we can..",
-    image: "/Container (3).svg",
+    image: "/Container%20%283%29.svg",
     linkColor: "text-[#1180c5]",
     underlineColor: "bg-[#1180c5]",
     isLarge: false,
