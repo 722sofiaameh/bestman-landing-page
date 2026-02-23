@@ -73,17 +73,17 @@ export const CoreProductsSection = (): JSX.Element => {
         </header>
 
         {/* PRODUCTS GRID */}
-        <div className="flex flex-col md:flex-row items-stretch justify-center gap-6 md:gap-[30px] w-full lg:flex-nowrap">
+        <div className="flex flex-col md:flex-row md:flex-wrap items-stretch justify-center gap-6 md:gap-4 lg:gap-[30px] w-full lg:flex-nowrap">
 
           {products.slice(0, 2).map((product, index) => (
             <Card
               key={product.id}
-              className="flex flex-col flex-1 min-w-0 md:min-w-[280px] rounded-none border-0 shadow-none bg-white -translate-y-4 animate-fade-in opacity-0"
+              className="flex flex-col flex-1 min-w-0 md:min-w-[calc(50%-8px)] md:max-w-[calc(50%-8px)] lg:min-w-[280px] lg:max-w-none rounded-none border-0 shadow-none bg-white -translate-y-4 animate-fade-in opacity-0"
               style={{ "--animation-delay": `${200 + index * 200}ms` } as React.CSSProperties}
             >
               <CardContent className="flex flex-col gap-5 p-0">
                 <div
-                  className="w-full h-[200px] bg-cover bg-center bg-no-repeat rounded-none"
+                  className="w-full h-[200px] md:h-[200px] lg:h-[200px] bg-cover bg-center bg-no-repeat rounded-none"
                   style={{ backgroundImage: `url(${product.image})` }}
                 />
 
@@ -118,20 +118,20 @@ export const CoreProductsSection = (): JSX.Element => {
 
           {/* LARGE PRODUCT CARD */}
           <Card
-            className="flex flex-col rounded-none flex-1 min-w-0 md:min-w-[280px] lg:min-w-[570px] border-0 shadow-none overflow-hidden -translate-y-4 animate-fade-in opacity-0"
+            className="flex flex-col rounded-none flex-1 min-w-0 md:w-full md:max-w-full lg:flex-1 lg:min-w-[570px] lg:max-w-none border-0 shadow-none overflow-hidden -translate-y-4 animate-fade-in opacity-0"
             style={{ "--animation-delay": "600ms" } as React.CSSProperties}
           >
-            <CardContent className="flex flex-col justify-end gap-5 p-6 sm:p-[30px] h-full min-h-[350px] sm:min-h-[400px] relative">
+            <CardContent className="flex flex-col justify-end gap-5 p-6 sm:p-6 md:p-8 lg:p-[30px] h-full min-h-[350px] sm:min-h-[400px] md:min-h-[400px] lg:min-h-[400px] relative">
               <div className="absolute inset-0 rounded-none bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${products[2].image})` }} />
               <div className="absolute inset-0 bg-[#1180c5] opacity-60" />
               <div className="absolute inset-0 bg-[linear-gradient(45deg,rgba(0,0,0,0.5)_0%,rgba(19,52,117,0.1)_100%)] opacity-60" />
 
               <div className="relative min-h-[86px] sm:h-[86.02px] overflow-hidden">
-                <h3 className="font-semibold text-[#fff] text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] tracking-[-0.4px] sm:tracking-[-0.6px] leading-[24px] sm:leading-[28px] md:leading-[30px] lg:leading-[32px] mb-2">
+                <h3 className="font-semibold text-white text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] tracking-[-0.4px] sm:tracking-[-0.6px] leading-[24px] sm:leading-[28px] md:leading-[30px] lg:leading-[32px] mb-2">
                   {products[2].title}
                 </h3>
 
-                <p className="font-normal text-[#fff] text-[12px] sm:text-[13px] md:text-[14px] lg:text-sm leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[22.4px] max-w-full sm:max-w-[310px]">
+                <p className="font-normal text-white text-[12px] sm:text-[13px] md:text-[14px] lg:text-sm leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[22.4px] max-w-full sm:max-w-[310px] md:max-w-[500px] lg:max-w-[310px]">
                   {products[2].description}
                 </p>
               </div>

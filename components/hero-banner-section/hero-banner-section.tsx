@@ -5,19 +5,19 @@ import { Button } from "@/components/ui/button";
 
 export const HeroBannerSection = (): React.ReactElement => {
   return (
-    <section className="relative flex items-center justify-center min-h-[500px] sm:min-h-[600px] lg:min-h-[690px] px-4 md:px-[120px] py-12 md:py-20">
+    <section className="relative flex items-center justify-center min-h-[500px] sm:min-h-[600px] lg:min-h-[690px] px-4 md:px-[60px] py-12 md:py-20">
       <div className="absolute w-full h-full top-0 left-0 bg-[url(/Banner.svg)] bg-cover bg-[70%_center] sm:bg-center" />
       <div className="bg-[linear-gradient(77deg,rgba(0,0,0,0.9)_8%,rgba(0,0,0,0.35)_52%,rgba(0,0,0,0)_100%)] absolute w-full h-full top-0 left-0" />
 
-      <div className="relative w-full max-w-[1200px] mx-auto px-4 md:px-[15px]">
+      <div className="relative w-full max-w-[1200px] mx-auto px-4 md:px-[5px]">
         <div className="flex flex-col items-start gap-6 md:gap-10 w-full">
 
-          <div className="flex flex-col max-w-full lg:max-w-[625px] items-start gap-4 md:gap-5">
+          <div className="flex flex-col max-w-full lg:max-w-[625px] md:max-w-[625px] items-start gap-4 md:gap-5">
 
             {/* ✅ HERO HEADING */}
             <h1 className="
               -translate-y-4 animate-fade-in opacity-0
-              w-full lg:w-[729px]
+              w-full lg:w-[729px] 
               text-[28px] sm:text-[36px] md:text-[44px] lg:text-[56px]
               font-semibold
               leading-[36px] sm:leading-[44px] md:leading-[56px] lg:leading-[72.8px]

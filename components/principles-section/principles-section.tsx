@@ -54,9 +54,9 @@ export const PrinciplesSection = (): JSX.Element => {
         </div>
 
         {/* 3-column grid: card | image | card */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-4 sm:gap-6 lg:gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] lg:grid-cols-[1fr_auto_1fr] gap-4 sm:gap-6 md:gap-6 lg:gap-8 items-stretch">
           {/* Left column — 2 cards stacked */}
-          <div className="flex flex-col gap-4 sm:gap-6 lg:gap-8">
+          <div className="flex flex-col gap-4 sm:gap-6 md:gap-6 lg:gap-8">
             {/* Card 1 */}
             <div className="flex-1 bg-[#0C6E8A] border-b-2 border-[#005872] p-5 sm:p-6 lg:p-8">
               <h3 className="text-white text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 lg:mb-4 leading-snug">
@@ -79,7 +79,7 @@ export const PrinciplesSection = (): JSX.Element => {
           </div>
 
           {/* Center image */}
-          <div className="w-full lg:w-[360px] xl:w-[420px] overflow-hidden">
+          <div className="w-full md:w-[280px] lg:w-[360px] xl:w-[420px] mx-auto md:mx-0 overflow-hidden shrink-0">
             <img
               src="/Builder.svg"
               alt="Engineer at work"
