@@ -74,7 +74,7 @@ interface ProductCardProps {
 
 function ProductCard({ image, title, description, href }: ProductCardProps) {
   return (
-    <div className="flex flex-col bg-[#FAFAFA] group">
+    <div className="flex flex-col bg-[#FAFAFA] group cursor-pointer">
       {/* Image */}
       <div className="relative w-full aspect-[4/3] overflow-hidden mb-2">
         <img
@@ -99,7 +99,7 @@ function ProductCard({ image, title, description, href }: ProductCardProps) {
             className="inline-flex items-center gap-1.5  text-[#1a8cc7] text-sm font-semibold border-b border-[#1a8cc7]  w-fit hover:opacity-70 transition-opacity duration-200"
           >
             Learn More
-            <ChevronRight className="w-4 h-4" />
+            <img src="/arrow-right%202.svg" alt="Arrow right" className="w-6 h-6" />
           </Link>
       </div>
     </div>
@@ -108,9 +108,9 @@ function ProductCard({ image, title, description, href }: ProductCardProps) {
 
 export const ProductsGridSection = (): JSX.Element => {
   return (
-    <section className="flex items-center justify-center py-[120px] px-4 md:px-8 lg:px-[120px] bg-white">
+    <section className="flex items-center justify-center py-[80px] px-4 md:px-8 lg:px-[120px] bg-white">
       <div className="w-full max-w-[1200px]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
           {products.map((product, index) => (
             <ProductCard
               key={product.id}

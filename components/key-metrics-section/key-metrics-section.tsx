@@ -76,6 +76,11 @@ export const KeyMetricsSection = (): JSX.Element => {
           </div>
         </div>
       </div>
+      <img
+        className="absolute w-[23.26%] h-[65.73%] top-[17.20%] left-0 pointer-events-none"
+        alt="Decorative background"
+        src="/Group.svg"
+      />
     </section>
   );
 };

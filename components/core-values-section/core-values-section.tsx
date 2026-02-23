@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { JSX } from "react";
@@ -45,7 +46,7 @@ const coreValues = [
 export const CoreValuesSection = (): JSX.Element => {
   return (
     <section className="flex items-center justify-center py-[120px] px-4 md:px-8 lg:px-[120px]">
-      <div className="flex flex-col items-center gap-[50px] w-full max-w-[1200px]">
+      <div className="flex flex-col items-center gap-[40px] w-full max-w-[1200px]">
         <header className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">
           <div className="flex flex-col gap-5 flex-1">
             <div className="flex flex-col items-start">
@@ -55,18 +56,24 @@ export const CoreValuesSection = (): JSX.Element => {
             </div>
 
             <div className="flex flex-col items-start max-w-[637px]">
-              <h2 className="font-brentor-template-framer-website-semantic-heading-2 font-[number:var(--brentor-template-framer-website-semantic-heading-2-font-weight)] text-[#1180c5] text-[length:var(--brentor-template-framer-website-semantic-heading-2-font-size)] tracking-[var(--brentor-template-framer-website-semantic-heading-2-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-heading-2-line-height)] [font-style:var(--brentor-template-framer-website-semantic-heading-2-font-style)]">
+              <h2 className="font-brentor-template-framer-website-semantic-heading-2 text-[38px] lg:whitespace-nowrap font-semibold tracking-[-0.43px] leading-[59.8px] text-[#1180c5]">
                 Precision. Performance. Partnership.
               </h2>
             </div>
           </div>
 
-          <Button className="bg-[#0c6e8a] hover:bg-[#0a5a71] text-white gap-4 pt-3 pb-[15px] px-[30px] h-auto transition-colors">
-            <span className="font-semibold tracking-[-0.08px] leading-[25.6px] [font-family:'Plus_Jakarta_Sans',Helvetica]">
-              Why choose us
-            </span>
-            <ArrowRightIcon className="w-6 h-6" />
-          </Button>
+          <Link href="/why-choose-us">
+            <Button className="bg-[#0c6e8a] hover:bg-[#0a5a71] text-white gap-4 pt-3 pb-[15px] px-[30px] h-auto transition-colors cursor-pointer">
+              <span className="font-semibold tracking-[-0.08px] leading-[25.6px] [font-family:'Plus_Jakarta_Sans',Helvetica]">
+                Why choose us
+              </span>
+              <img
+                src="/arrow-right.svg"
+                alt="Arrow right"
+                className="w-5 h-5 md:w-6 md:h-6 brightness-0 invert"
+              />
+            </Button>
+          </Link>
         </header>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] w-full">
@@ -80,9 +87,9 @@ export const CoreValuesSection = (): JSX.Element => {
                 } as React.CSSProperties
               }
             >
-              <CardContent className="flex flex-col items-start justify-center gap-[30px] pt-[39px] pb-10 px-10">
+              <CardContent className="flex flex-col items-start justify-center gap-[30px] pt-[39px] pb-10 px-8">
                 <div className="flex flex-col items-start w-full">
-                  <h3 className="font-brentor-template-framer-website-semantic-heading-4 font-[number:var(--brentor-template-framer-website-semantic-heading-4-font-weight)] text-[#0c6e8a] text-[length:var(--brentor-template-framer-website-semantic-heading-4-font-size)] tracking-[var(--brentor-template-framer-website-semantic-heading-4-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-heading-4-line-height)] [font-style:var(--brentor-template-framer-website-semantic-heading-4-font-style)]">
+                  <h3 className="font-brentor-template-framer-website-semantic-heading-4 font-semibold text-2xl tracking-[-0.43px] leading-[49.4px] text-[#0C6E8A]">
                     {value.number}
                   </h3>
                 </div>
@@ -91,7 +98,7 @@ export const CoreValuesSection = (): JSX.Element => {
 
                 <div className="flex flex-col items-start gap-[9.11px] w-full">
                   <div className="flex flex-col items-start w-full">
-                    <h4 className="font-brentor-template-framer-website-semantic-heading-5 font-[number:var(--brentor-template-framer-website-semantic-heading-5-font-weight)] text-[#1180c5] text-[length:var(--brentor-template-framer-website-semantic-heading-5-font-size)] tracking-[var(--brentor-template-framer-website-semantic-heading-5-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-heading-5-line-height)] [font-style:var(--brentor-template-framer-website-semantic-heading-5-font-style)]">
+                    <h4 className="font-brentor-template-framer-website-semantic-heading-5 font-semibold text-xl tracking-[-0.43px] leading-[49.4px] text-[#1180c5]">
                       {value.title}
                     </h4>
                   </div>

@@ -26,15 +26,7 @@ export const ContactHeroSection = () => {
       ref={containerRef}
       className="relative w-full min-h-[340px] flex items-center justify-center overflow-hidden bg-[#1180C5]"
     >
-      {/* Dot grid texture */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-40"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px)",
-          backgroundSize: "28px 28px",
-        }}
-      />
+     
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center text-center px-6 py-20 max-w-2xl w-full">

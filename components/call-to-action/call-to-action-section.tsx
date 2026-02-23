@@ -28,9 +28,9 @@ export const CallToActionSection = (): JSX.Element => {
                 Request a quote
               </span>
               <img
-                src="/arrow-right.svg"
+                src="/arrow-right 2.svg"
                 alt="Arrow right"
-                className="w-4 h-4"
+                className="w-5 h-5 md:w-6 md:h-6"
               />
             </Button>
           </div>

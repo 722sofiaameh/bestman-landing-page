@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { JSX } from "react";
@@ -9,7 +10,7 @@ const products = [
     title: "Mobile Workshop",
     description:
       "We manufactures customized Container Workshops. These are made for on-site repair of Safety and Isolation Valves. Our Mobile Workshops are made from either 20'",
-    image: "https://c.animaapp.com/mlvt2sbbsosEG0/img/building.png",
+    image: "/Image Wrapper.svg",
     linkColor: "text-[#1180c5]",
     underlineColor: "bg-[#1180c5]",
     isLarge: false,
@@ -19,7 +20,7 @@ const products = [
     title: "In Situ Valve Repair",
     description:
       "With over two decades of expertise in in-situ valve repair of our principal partner EFCO, we can..",
-    image: "https://c.animaapp.com/mlvt2sbbsosEG0/img/building-1.png",
+    image: "/Container (3).svg",
     linkColor: "text-[#1180c5]",
     underlineColor: "bg-[#1180c5]",
     isLarge: false,
@@ -55,12 +56,18 @@ export const CoreProductsSection = (): JSX.Element => {
             </div>
           </div>
 
-          <Button className="cursor-pointer gap-3 md:gap-4 pt-3 pb-[15px] px-5 md:px-[20px] bg-[#0c6e8a] hover:bg-[#0c6e8a]/90 h-auto rounded-none border border-[#0c6e8a] transition-colors w-full sm:w-auto">
-            <span className="font-semibold text-greyscale-0 text-sm md:text-base tracking-[-0.48px] leading-[25.6px] whitespace-nowrap">
-              All products
-            </span>
-            <ArrowRightIcon className="w-5 h-5 md:w-6 md:h-6 text-greyscale-0" />
-          </Button>
+          <Link href="/products">
+            <Button className="cursor-pointer gap-3 md:gap-4 pt-3 pb-[15px] px-5 md:px-[20px] bg-[#0c6e8a] hover:bg-[#0c6e8a]/90 h-auto rounded-none border border-[#0c6e8a] transition-colors w-full sm:w-auto">
+              <span className="font-semibold text-greyscale-0 text-sm md:text-base tracking-[-0.48px] leading-[25.6px] whitespace-nowrap">
+                All products
+              </span>
+              <img
+                src="/arrow-right.svg"
+                alt="Arrow right"
+                className="w-5 h-5 md:w-6 md:h-6 brightness-0 invert"
+              />
+            </Button>
+          </Link>
         </header>
 
         <div className="flex flex-col md:flex-row items-stretch justify-center gap-6 md:gap-[30px] w-full lg:flex-nowrap">
@@ -91,8 +98,8 @@ export const CoreProductsSection = (): JSX.Element => {
                     </p>
                   </div>
 
-                  <a
-                    href="#"
+                  <Link
+                    href="/products"
                     className="cursor-pointer inline-flex flex-col items-start group"
                   >
                     <div className="flex items-center justify-center  relative pb-1">
@@ -101,14 +108,16 @@ export const CoreProductsSection = (): JSX.Element => {
                       >
                         About product
                       </span>
-                      <ArrowRightIcon
-                        className={`w-6 h-6 ${product.linkColor}`}
-                      />
+                          <img
+                            src="/arrow-right 2.svg"
+                            alt="Arrow right"
+                            className={`w-6 h-6 ${product.linkColor}`}
+                          />
                       <div
                         className={`absolute bottom-0 mt-4 left-0 right-0 h-[2px] ${product.underlineColor}`}
                       />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -136,8 +145,8 @@ export const CoreProductsSection = (): JSX.Element => {
                 </p>
               </div>
 
-              <a
-                href="#"
+              <Link
+                href="/products"
                 className="cursor-pointer inline-flex flex-col items-start relative group"
               >
                 <div className="flex items-center justify-center gap-3 relative pb-1">
@@ -146,14 +155,16 @@ export const CoreProductsSection = (): JSX.Element => {
                   >
                     About product
                   </span>
-                  <ArrowRightIcon
+                  <img
+                    src="/arrow-right.svg"
+                    alt="Arrow right"
                     className={`w-6 h-6 ${products[2].linkColor}`}
                   />
                   <div
                     className={`absolute bottom-0 left-0 right-0 h-[2px] ${products[2].underlineColor}`}
                   />
                 </div>
-              </a>
+              </Link>
             </CardContent>
           </Card>
         </div>

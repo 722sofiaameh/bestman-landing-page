@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 interface ValueProposition {
   id: string;
@@ -76,24 +77,26 @@ export const ValuePropositionSection = (): React.ReactElement => {
           </div>
 
           <div className="inline-flex flex-col items-start relative flex-[0_0_auto]">
-            <button
-              className="gap-4 pt-3 pb-[15px] px-[30px] flex-[0_0_auto] bg-[#0c6e8a] inline-flex items-center justify-center relative hover:bg-[#0a5c73] transition-colors cursor-pointer border-0"
-              aria-label="Learn more about why choose us"
-            >
-              <div className="inline-flex flex-col items-start relative flex-[0_0_auto]">
-                <div className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-                  <span className="w-fit text-white text-base tracking-[-0.48px] leading-[25.6px] whitespace-nowrap relative flex items-center justify-center mt-[-1.00px] [font-family:'Plus_Jakarta_Sans-SemiBold',Helvetica] font-semibold">
-                    Why choose us
-                  </span>
+            <Link href="/why-choose-us">
+              <button
+                className="gap-4 pt-3 pb-[15px] px-[30px] flex-[0_0_auto] bg-[#0c6e8a] inline-flex items-center justify-center relative hover:bg-[#0a5c73] transition-colors cursor-pointer border-0"
+                aria-label="Learn more about why choose us"
+              >
+                <div className="inline-flex flex-col items-start relative flex-[0_0_auto]">
+                  <div className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
+                    <span className="w-fit text-white text-base tracking-[-0.48px] leading-[25.6px] whitespace-nowrap relative flex items-center justify-center mt-[-1.00px] [font-family:'Plus_Jakarta_Sans-SemiBold',Helvetica] font-semibold">
+                      Why choose us
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <img
-                src="/arrow-right.svg"
-                alt="Arrow right"
-                className="relative w-6 h-6"
-              />
-            </button>
+                <img
+                  src="/arrow-right.svg"
+                  alt="Arrow right"
+                  className="relative w-6 h-6"
+                />
+              </button>
+            </Link>
           </div>
         </header>
 

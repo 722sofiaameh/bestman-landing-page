@@ -67,13 +67,13 @@ export const CustomerTestimonialsSection = (): JSX.Element => {
         <div className="flex flex-col items-center justify-center gap-[50px] w-full translate-y-[-1rem] animate-fade-in opacity-0">
           <header className="flex flex-col items-center gap-5 w-full">
             <div className="flex flex-col items-center w-full">
-              <p className="[font-family:'Plus_Jakarta_Sans',Helvetica] font-semibold text-[#0c6e8a] text-sm text-center tracking-[-0.42px] leading-[22.4px]">
+              <p className="[font-family:'Plus_Jakarta_Sans',Helvetica] font-semibold text-[#0c6e8a] text-base text-center tracking-[-0.42px] leading-[22.4px]">
                 Testimonials
               </p>
             </div>
 
             <div className="flex flex-col items-center max-w-[530px]">
-              <h2 className="font-brentor-template-framer-website-semantic-heading-2 font-[number:var(--brentor-template-framer-website-semantic-heading-2-font-weight)] text-[#1180c5] text-[length:var(--brentor-template-framer-website-semantic-heading-2-font-size)] text-center tracking-[var(--brentor-template-framer-website-semantic-heading-2-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-heading-2-line-height)] [font-style:var(--brentor-template-framer-website-semantic-heading-2-font-style)]">
+              <h2 className="font-brentor-template-framer-website-semantic-heading-2 text-[38px] font-semibold tracking-[-0.43px] leading-[59.8px] text-[#1180c5]">
                 Hear from our people.
               </h2>
             </div>
@@ -81,7 +81,7 @@ export const CustomerTestimonialsSection = (): JSX.Element => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px] w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="flex-1 border-0 shadow-none">
+              <Card key={index} className="flex-1 border-0 shadow-none cursor-pointer">
                 <CardContent className="flex flex-col gap-[30px] p-5 bg-neutral-50">
                   <div className="flex flex-col gap-[19.39px]">
                     <div className="flex items-center gap-0.5">

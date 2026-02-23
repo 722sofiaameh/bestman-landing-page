@@ -4,9 +4,9 @@ import Link from "next/link";
 import { JSX } from "react";
 
 const navLinks = [
-  { label: "About Us", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Products", href: "#products" },
+  { label: "About Us", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Products", href: "/products" },
 ];
 
 export const HeroContentSection = (): JSX.Element => {

@@ -43,8 +43,8 @@ export const WhyWeSetApart = () => {
             <div className="w-full max-w-[1200px] px-[15px]">
                 <div className="flex flex-col lg:flex-row items-start lg:items-start justify-center gap-8 lg:gap-[200px]">
                     <aside className="w-full lg:w-[200px] flex-shrink-0 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">
-                        <h2 className="font-brentor-template-framer-website-semantic-heading-6 font-[number:var(--brentor-template-framer-website-semantic-heading-6-font-weight)] text-[#1180c5] text-[length:var(--brentor-template-framer-website-semantic-heading-6-font-size)] tracking-[var(--brentor-template-framer-website-semantic-heading-6-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-heading-6-line-height)] [font-style:var(--brentor-template-framer-website-semantic-heading-6-font-style)]">
-                            Trusted Valve Solutions Across the Entire Lifecycle
+                        <h2 className="font-brentor-template-framer-website-semantic-heading-6 font-semibold     font-[number:var(--brentor-template-framer-website-semantic-heading-6-font-weight)] text-[#1180c5] text-[length:var(--brentor-template-framer-website-semantic-heading-6-font-size)] tracking-[var(--brentor-template-framer-website-semantic-heading-6-letter-spacing)] leading-[var(--brentor-template-framer-website-semantic-heading-6-line-height)] [font-style:var(--brentor-template-framer-website-semantic-heading-6-font-style)]">
+                        What sets us apart
                         </h2>
                     </aside>
 
@@ -62,20 +62,20 @@ export const WhyWeSetApart = () => {
                           
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms] items-stretch">
                             {keyPoints.map((point) => (
-                                <div key={point.id} className="flex flex-col items-start">
+                                <div key={point.id} className="flex flex-col items-start h-full">
                                     <div className="flex flex-col items-start w-full mb-3">
-                                        <span className="font-semibold text-[#1180c5] text-[46px] tracking-[-0.42px] leading-[59.8px]">
+                                        <span className="font-semibold text-[#0C6E8A] text-[24px] tracking-[-0.42px] leading-[59.8px]">
                                             {point.number}
                                         </span>
                                     </div>
-                                    <div className="w-full h-0.5 bg-[#1180c5] mb-4" />
-                                    <div className="flex flex-col items-start w-full">
+                                    <div className="w-full h-0.5 bg-[#0C6E8A] mb-4" />
+                                    <div className="flex flex-col items-start w-full flex-1">
                                         <h4 className="font-bold text-[#1180c5] text-lg md:text-xl mb-2">
                                             {point.title}
                                         </h4>
-                                        <p className="text-gray-600 text-sm leading-relaxed">
+                                        <p className="text-gray-600 text-sm leading-relaxed flex-1">
                                             {point.description}
                                         </p>
                                     </div>
@@ -87,9 +87,9 @@ export const WhyWeSetApart = () => {
             </div>
 
             <img
-                className="absolute w-[23.26%] h-[65.73%] top-[17.20%] left-0 pointer-events-none"
+                className="absolute w-[23.26%] h-[65.73%] top-[2.20%] left-0 pointer-events-none"
                 alt="Decorative background"
-                src="https://c.animaapp.com/mlxaygwhYd0iJj/img/group.png"
+                src="/Vector (2).svg"
             />
         </section>
     )

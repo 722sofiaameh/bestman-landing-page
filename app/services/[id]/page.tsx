@@ -4,7 +4,6 @@ import { CallToActionSection } from "@/components/call-to-action/call-to-action-
 import { FAQSection } from "@/components/faq-section/faq-section";
 import { ServiceDetailHeroSection } from "@/components/service-detail-hero-section/service-detail-hero-section";
 import Link from "next/link";
-import { ArrowRightIcon } from "lucide-react";
 
 interface ServiceDetailsPageProps {
   params: {
@@ -138,7 +137,7 @@ export default function ServiceDetailsPage({ params }: ServiceDetailsPageProps) 
               <Link href="/services">
                 <button className="flex items-center gap-2 bg-[#0c6e8a] hover:bg-[#0a5a70] text-white font-semibold px-6 py-3 rounded-sm transition-colors whitespace-nowrap">
                   <span>View all services</span>
-                  <ArrowRightIcon className="w-5 h-5" />
+                  <img src="/arrow-right.svg" alt="Arrow right" className="w-5 h-5 brightness-0 invert" />
                 </button>
               </Link>
             </div>
@@ -146,7 +145,7 @@ export default function ServiceDetailsPage({ params }: ServiceDetailsPageProps) 
             {/* Services Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
               {otherServices.map((otherService) => (
-                <div key={otherService.id} className="flex flex-col h-full">
+                <div key={otherService.id} className="flex cursor-pointer flex-col h-full">
                   <div className="w-full h-[200px] overflow-hidden rounded-none shrink-0 mb-4">
                     <img
                       src={otherService.image}
@@ -168,7 +167,7 @@ export default function ServiceDetailsPage({ params }: ServiceDetailsPageProps) 
                         <span className="text-[#1180c5] font-semibold text-base">
                           Learn More
                         </span>
-                        <ArrowRightIcon className="w-6 h-6 text-[#1180c5] transition-transform duration-300 group-hover:translate-x-1" />
+                        <img src="/arrow-right%202.svg" alt="Arrow right" className="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1" />
                         <div className="absolute bottom-0 left-0 right-0 h-px bg-[#1180c5] transition-all duration-300 group-hover:w-[calc(100%+12px)]" />
                       </div>
                     </Link>

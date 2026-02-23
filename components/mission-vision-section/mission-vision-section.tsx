@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 const navigationLinks = [
   { label: "About Us", href: "/about" },
-  { label: "Services", href: "/#services" },
+  { label: "Services", href: "/services" },
   { label: "Products", href: "/products" },
 ];
 
@@ -19,7 +19,7 @@ export const MissionVisionSection = ({ backgroundColor = "bg-greyscale-0" }: Mis
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isWhiteBackground = backgroundColor === "bg-greyscale-0";
   const logoSrc = isWhiteBackground 
-    ? "https://c.animaapp.com/mlvt2sbbsosEG0/img/frame-3-1.svg"
+    ? "/Frame 3 (2).svg"
     : "/Frame 3 (1).svg";
   const textColor = isWhiteBackground ? "text-[#5A6272]" : "text-white";
   const hoverTextColor = isWhiteBackground ? "hover:text-[#0c6e8a]" : "hover:text-white/80";

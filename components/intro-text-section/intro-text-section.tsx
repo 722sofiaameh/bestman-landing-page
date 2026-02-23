@@ -24,12 +24,12 @@ export const IntroTextSection = (): React.ReactElement => {
                   <div className="pt-[27.8px] pb-[28.79px] px-[15px] flex-1 grow inline-flex items-center justify-center relative">
                     <div className="inline-flex flex-col items-start relative flex-[0_0_auto]">
                       <div className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-                        <a
-                          href={`#${link.label.toLowerCase().replace(" ", "-")}`}
+                        <Link
+                          href={link.label === "About Us" ? "/about" : link.label === "Services" ? "/services" : "/products"}
                           className="font-brentor-template-framer-website-semantic-link font-[number:var(--brentor-template-framer-website-semantic-link-font-weight)] text-white tracking-[var(--brentor-template-framer-website-semantic-link-letter-spacing)] relative flex items-center justify-center w-fit mt-[-1.00px] text-[length:var(--brentor-template-framer-website-semantic-link-font-size)] leading-[var(--brentor-template-framer-website-semantic-link-line-height)] whitespace-nowrap [font-style:var(--brentor-template-framer-website-semantic-link-font-style)]"
                         >
                           {link.label}
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

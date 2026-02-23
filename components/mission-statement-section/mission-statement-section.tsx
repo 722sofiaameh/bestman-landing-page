@@ -80,7 +80,11 @@ export const MissionStatementSection = (): JSX.Element => {
               <span className="font-semibold text-sm md:text-base tracking-[-0.08px] leading-[25.6px]">
                 Why Bestman?
               </span>
-              <ArrowRightIcon className="w-5 h-5 md:w-6 md:h-6" />
+              <img
+                src="/arrow-right 3.svg"
+                alt="Arrow right"
+                className="w-5 h-5 md:w-6 md:h-6"
+              />
             </Button>
           </div>
         </div>

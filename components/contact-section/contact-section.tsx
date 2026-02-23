@@ -31,10 +31,10 @@ export const ContactSection = (): JSX.Element => {
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         {/* Left — Contact Info */}
         <div>
-          <p className="text-[#0c6e8a] text-sm font-semibold tracking-wide mb-4">
+          <p className="text-[#0c6e8a] text-sm font-semibold  mb-4">
             Get in touch
           </p>
-          <h2 className="text-[#1180C5] text-4xl md:text-5xl font-bold leading-tight mb-6">
+          <h2 className="text-[#1180C5] text-4xl lg:whitespace-nowrap  font-bold leading-tight mb-6">
             Contact Our Engineering Team
           </h2>
           <p className="text-gray-500 text-base leading-relaxed max-w-md mb-10">
@@ -47,7 +47,7 @@ export const ContactSection = (): JSX.Element => {
 
           <ul className="flex flex-col gap-6">
             <li className="flex items-start gap-4">
-              <MapPin className="w-5 h-5 text-[#1180C5] mt-0.5 shrink-0" />
+              <MapPin className="w-5 h-5 text-[#0C6E8A] mt-0.5 shrink-0" />
               <a
                 href="https://maps.google.com"
                 target="_blank"
@@ -58,7 +58,7 @@ export const ContactSection = (): JSX.Element => {
               </a>
             </li>
             <li className="flex items-center gap-4">
-              <Phone className="w-5 h-5 text-[#1180C5] shrink-0" />
+              <Phone className="w-5 h-5 text-[#0C6E8A] shrink-0" />
               <a
                 href="tel:+2348162037867"
                 className="text-[#1180C5] font-semibold text-base hover:underline"
@@ -67,7 +67,7 @@ export const ContactSection = (): JSX.Element => {
               </a>
             </li>
             <li className="flex items-center gap-4">
-              <Mail className="w-5 h-5 text-[#1180C5] shrink-0" />
+              <Mail className="w-5 h-5 text-[#0C6E8A] shrink-0" />
               <a
                 href="mailto:info@bestmaninternational.com"
                 className="text-[#1180C5] font-semibold text-base hover:underline"

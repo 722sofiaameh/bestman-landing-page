@@ -26,21 +26,13 @@ const promises = [
 export const PromiseSection = (): JSX.Element => {
   return (
     <section className="relative mb-20 w-full bg-[#1180C5] overflow-hidden">
-      {/* Dot grid texture */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-30"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px)",
-          backgroundSize: "28px 28px",
-        }}
-      />
+     
 
-      <div className="relative z-10 max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
+      <div className="relative z-10  mx-auto grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
         {/* Left: Text content */}
         <div className="flex flex-col justify-center py-16 px-4 md:px-8 lg:px-[120px] lg:pr-16">
           {/* Eyebrow */}
-          <p className="text-white/75 text-xs font-medium tracking-wide mb-6">
+          <p className="text-white/75 text-sm font-semibold  mb-6">
             Our promise to you
           </p>
 
@@ -56,8 +48,8 @@ export const PromiseSection = (): JSX.Element => {
           <div className="flex flex-col gap-7">
             {promises.map(({ id, title, description }) => (
               <div key={id}>
-                <h3 className="text-white text-sm font-bold mb-1.5">{title}</h3>
-                <p className="text-white/75 text-sm leading-relaxed">
+                <h3 className="text-white text-xl font-bold mb-1.5">{title}</h3>
+                <p className="text-white/75 text-base leading-relaxed">
                   {description}
                 </p>
               </div>
@@ -66,9 +58,9 @@ export const PromiseSection = (): JSX.Element => {
         </div>
 
         {/* Right: Image */}
-        <div className="relative w-full min-h-[420px] lg:min-h-0">
+        <div className="relative w-full min-h-[420px] p-20 lg:min-h-0">
           <img
-            src="https://picsum.photos/seed/engineers-site/800/600"
+            src="/Container (5).svg"
             alt="Engineers reviewing plans on site"
             className="w-full h-full object-cover"
           />

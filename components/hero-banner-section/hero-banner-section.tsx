@@ -1,11 +1,12 @@
 import React from "react";
+import Link from "next/link";
 import { ArrowRightIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const HeroBannerSection = (): React.ReactElement => {
   return (
     <section className="relative flex items-center justify-center min-h-[500px] sm:min-h-[600px] lg:min-h-[690px] px-4 md:px-[120px] py-12 md:py-20">
-      <div className="absolute w-full h-full top-0 left-0 bg-[url(https://c.animaapp.com/mlvt2sbbsosEG0/img/image---banner.png)] bg-cover bg-center" />
+      <div className="absolute w-full h-full top-0 left-0 bg-[url(/Banner.svg)] bg-cover bg-center" />
 
       <div className="bg-[linear-gradient(77deg,rgba(0,0,0,0.9)_8%,rgba(0,0,0,0.35)_52%,rgba(0,0,0,0)_100%)] absolute w-full h-full top-0 left-0" />
 
@@ -29,18 +30,28 @@ export const HeroBannerSection = (): React.ReactElement => {
               <span className="font-semibold text-sm md:text-base tracking-[-0.08px] leading-[25.6px]">
                 Request a quote
               </span>
-              <ArrowRightIcon className="w-5 h-5 md:w-6 md:h-6" />
+              <img
+                src="/arrow-right 2.svg"
+                alt="Arrow right"
+                className="w-5 h-5 md:w-6 md:h-6"
+              />
             </Button>
 
-            <button className="cursor-pointer flex flex-col items-start gap-1 group transition-opacity hover:opacity-80 w-full sm:w-auto">
-              <div className="flex items-center gap-2.5">
-                <span className="font-semibold text-greyscale-0 text-sm md:text-base tracking-[-0.48px] leading-[22px] md:leading-[25.6px]">
-                  Learn more about us
-                </span>
-                <ArrowRightIcon className="w-5 h-5 md:w-6 md:h-6 text-greyscale-0" />
-              </div>
-              <div className="h-0.5 w-full bg-greyscale-0" />
-            </button>
+            <Link href="/about">
+              <button className="cursor-pointer flex flex-col items-start gap-1 group transition-opacity hover:opacity-80 w-full sm:w-auto">
+                <div className="flex items-center gap-2.5">
+                  <span className="font-semibold text-greyscale-0 text-sm md:text-base tracking-[-0.48px] leading-[22px] md:leading-[25.6px]">
+                    Learn more about us
+                  </span>
+                  <img
+                  src="/arrow-right (1).svg"
+                  alt="Arrow right"
+                  className="w-5 h-5 md:w-6 md:h-6"
+                />
+                  </div>
+                <div className="h-0.5 w-full bg-greyscale-0" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

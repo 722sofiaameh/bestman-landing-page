@@ -123,13 +123,13 @@ export default function ProductDetailsPage({ params }: ProductDetailsPageProps) 
             <img
               src={product.image}
               alt={product.title}
-              className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+              className="w-full h-[400px] md:h-[500px] lg:h-[500px] object-cover"
             />
           </div>
         </div>
 
         {/* Content Sections */}
-        <div className="w-full py-16 px-4 md:px-8 lg:px-[160px]">
+        <div className="w-full py-16 px-4 md:px-8 lg:px-[200px]">
           <div className="max-w-[1200px] mx-auto space-y-12">
             {contentSections.map((section, index) => (
               <div key={index} className="space-y-4">

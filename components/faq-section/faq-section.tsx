@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
 import { JSX } from "react";
 
 const faqs = [
@@ -64,7 +63,7 @@ interface FAQItemProps {
 
 function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
   return (
-    <div className="border-b border-[#1180C5]/30">
+    <div className="border-b border-[#0C6E8A]/30">
       <button
         onClick={onToggle}
         className="w-full flex items-center justify-between py-5 text-left gap-4 group"
@@ -72,11 +71,13 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
         <span className="text-[#1180C5] text-base font-semibold leading-snug group-hover:opacity-80 transition-opacity">
           {question}
         </span>
-        <ChevronDown
-          className={`w-5 h-5 text-[#1180C5] flex-shrink-0 transition-transform duration-300 ${
-            isOpen ? "rotate-180" : ""
-          }`}
-        />
+            <img
+              src="/arrow-down.svg"
+              alt="Arrow down"
+              className={`w-5 h-5 shrink-0 transition-transform duration-300 ${
+                isOpen ? "rotate-180" : ""
+              }`}
+            />
       </button>
 
       <div
@@ -103,7 +104,7 @@ export const FAQSection = (): JSX.Element => {
       <div className="max-w-[1200px] mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
-          <p className="text-gray-500 text-xs font-semibold tracking-[0.15em] uppercase mb-4">
+          <p className="text-[#0C6E8A] text-sm font-semibold  uppercase mb-4">
             FAQ
           </p>
           <h2 className="text-[#1180C5] text-4xl md:text-5xl font-bold">

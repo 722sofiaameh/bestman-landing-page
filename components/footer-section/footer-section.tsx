@@ -8,7 +8,7 @@ import { JSX } from "react";
 
 const companyLinks = [
   { label: "About Us", href: "/about" },
-  { label: "Services", href: "/#services" },
+  { label: "Services", href: "/services" },
   { label: "Our Products", href: "/products" },
 ];
 

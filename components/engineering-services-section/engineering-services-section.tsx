@@ -55,11 +55,11 @@ interface EngineeringServicesSectionProps {
 
 export const EngineeringServicesSection = ({ isServicesPage = false }: EngineeringServicesSectionProps): JSX.Element => {
   return (
-    <section className={`w-full ${isServicesPage ? 'bg-white' : 'bg-[#FAFAFA]'} py-12 md:py-16 lg:py-[120px] px-4 md:px-8 lg:px-[120px]`}>
+    <section className={`w-full ${isServicesPage ? 'bg-white' : 'bg-[#FAFAFA]'} py-12 md:py-16  px-4 md:px-8 lg:px-[120px]`}>
       <div className="max-w-[1200px] mx-auto flex flex-col gap-8 md:gap-12 lg:gap-[50px]">
         {isServicesPage ? (
-          <header className="w-full flex flex-col items-center text-center -translate-y-4 animate-fade-in opacity-0">
-            <p className="text-[#0C6E8A] font-semibold text-sm leading-[22px] md:leading-[25.6px] mb-4">
+          <header className="w-full flex py-[40px] flex-col items-center text-center -translate-y-4 animate-fade-in opacity-0">
+            <p className="text-[#0C6E8A] font-semibold text-base leading-[22px] md:leading-[25.6px] mb-4">
               Our services
             </p>
             <h2 className="text-[#1180c5] font-semibold text-[28px] md:text-[34px] lg:text-[38px] tracking-[-1.14px] leading-[1.3] md:leading-[49.4px]">
@@ -67,7 +67,7 @@ export const EngineeringServicesSection = ({ isServicesPage = false }: Engineeri
             </h2>
           </header>
         ) : (
-          <header className="w-full flex flex-col lg:flex-row items-start gap-6 md:gap-8 lg:gap-[120px] -translate-y-4 animate-fade-in opacity-0">
+          <header className="w-full lg:py-[120px] flex flex-col lg:flex-row items-start gap-6 md:gap-8 lg:gap-[120px] -translate-y-4 animate-fade-in opacity-0">
             <div className="shrink-0 max-w-full lg:max-w-[300px]">
               <p className="text-[#0C6E8A] font-semibold text-sm leading-[22px] md:leading-[25.6px]">
                 We offer a full spectrum of services designed to bring your
@@ -93,7 +93,7 @@ export const EngineeringServicesSection = ({ isServicesPage = false }: Engineeri
           {services.map((service, index) => (
             <Card
               key={service.id}
-              className="flex flex-col h-full gap-[19px] border-0 shadow-none bg-transparent -translate-y-4 animate-fade-in opacity-0"
+              className="flex cursor-pointer flex-col h-full gap-[19px] border-0 shadow-none bg-transparent -translate-y-4 animate-fade-in opacity-0"
               style={
                 {
                   "--animation-delay": `${(index + 1) * 200}ms`,
@@ -128,7 +128,11 @@ export const EngineeringServicesSection = ({ isServicesPage = false }: Engineeri
                       <span className="text-[#1180c5] font-semibold text-base">
                         Learn More
                       </span>
-                      <ArrowRightIcon className="w-6 h-6 text-[#1180c5] transition-transform duration-300 group-hover:translate-x-1" />
+                      <img
+                        src="/arrow-right 2.svg"
+                        alt="Arrow right"
+                        className="w-6 h-6 text-[#1180c5] transition-transform duration-300 group-hover:translate-x-1"
+                      />
                       <div className="absolute bottom-0 left-0 right-0 h-px bg-[#1180c5] transition-all duration-300 group-hover:w-[calc(100%+12px)]" />
                     </div>
                   </Button>

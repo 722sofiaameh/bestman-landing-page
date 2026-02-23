@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { JSX } from "react";
@@ -48,12 +49,18 @@ export const PrecisionPerformanceSection = (): JSX.Element => {
               </p>
             </div>
 
-            <Button className="cursor-pointer h-auto bg-greyscale-0 hover:bg-greyscale-0/90 text-[#1180c5] pt-3 pb-[15px] px-6 md:px-[30px] rounded-none border border-white w-full sm:w-fit transition-transform">
-              <span className="font-semibold text-sm md:text-base tracking-[-0.08px] leading-[25.6px]">
-                About Bestman
-              </span>
-              <ArrowRightIcon className="w-5 h-5 md:w-6 md:h-6 ml-2 md:ml-4" />
-            </Button>
+            <Link href="/about">
+              <Button className="cursor-pointer h-auto bg-greyscale-0 hover:bg-greyscale-0/90 text-[#1180c5] pt-3 pb-[15px] px-6 md:px-[30px] rounded-none border border-white w-full sm:w-fit transition-transform">
+                <span className="font-semibold text-sm md:text-base tracking-[-0.08px] leading-[25.6px]">
+                  About Bestman
+                </span>
+                <img
+                  src="/arrow-right 2.svg"
+                  alt="Arrow right"
+                  className="w-5 h-5 md:w-6 md:h-6"
+                />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
