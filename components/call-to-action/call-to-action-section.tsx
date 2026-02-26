@@ -46,7 +46,7 @@ export const CallToActionSection = (): JSX.Element => {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage:
-                "url(https://c.animaapp.com/mlvt2sbbsosEG0/img/skyscraper.png)",
+                "url(/Skyscraper-1.svg)",
             }}
           />
 

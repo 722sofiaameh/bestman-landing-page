@@ -41,12 +41,12 @@ export const MissionVisionSection = (): JSX.Element => {
         <div className="relative w-full py-20 md:py-[100px]">
           
           {/* Background */}
-          <div className="absolute inset-0 left-1/2 w-[150%] max-lg:-translate-x-1/2 overflow-hidden">
+          <div className="absolute inset-0 left-1/2 w-[60%] max-lg:-translate-x-1/2 overflow-hidden">
             <div
               className="absolute inset-0 bg-no-repeat bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url(/Image%20Wrapper%20%281%29.svg)",
+                  "url(/Image-Wrapper1.svg)",
               }}
             />
           </div>

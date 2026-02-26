@@ -133,7 +133,7 @@ export const MissionStatementSection = (): JSX.Element => {
               className="w-full h-full bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url(https://c.animaapp.com/mlvt2sbbsosEG0/img/crane.png)",
+                  "url(/photo-main.svg)",
               }}
             />
           </div>

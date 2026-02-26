@@ -60,7 +60,7 @@ export const PromiseSection = (): JSX.Element => {
         {/* Right: Image */}
         <div className="relative w-full min-h-[260px] sm:min-h-[340px] lg:min-h-0 p-6 sm:p-10 lg:p-20">
           <img
-            src="/Container (5).svg"
+            src="/photo-2.svg"
             alt="Engineers reviewing plans on site"
             className="w-full h-full object-cover"
           />

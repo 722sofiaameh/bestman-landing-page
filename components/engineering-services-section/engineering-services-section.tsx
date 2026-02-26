@@ -3,51 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { JSX } from "react";
-
-const services = [
-  {
-    id: "1",
-    image: "https://c.animaapp.com/mlvt2sbbsosEG0/img/drawings.png",
-    title: "Valve Procurement, Installation & Commissioning",
-    description:
-      "Sourcing, procurement, expediting, and delivery of valves and related equipment with global supply partnerships.",
-  },
-  {
-    id: "2",
-    image: "https://c.animaapp.com/mlvt2sbbsosEG0/img/team.png",
-    title: "Valve Testing, Repair & Maintenance",
-    description:
-      "In-house and on-site valve overhaul, troubleshooting, calibration, and refurbishment services.",
-  },
-  {
-    id: "3",
-    image: "https://c.animaapp.com/mlvt2sbbsosEG0/img/grinder-tool.png",
-    title: "Instrumentation & Calibration",
-    description:
-      "Calibration of valves, transmitters, gauges, safety valves, pressure devices, flow meters, and process control equipment.",
-  },
-  {
-    id: "4",
-    image: "https://c.animaapp.com/mlvt2sbbsosEG0/img/drawings-1.png",
-    title: "Fabrication & Machining",
-    description:
-      "CNC machining, flange works, mechanical parts fabrication, and metal structures manufacturing.",
-  },
-  {
-    id: "5",
-    image: "https://c.animaapp.com/mlvt2sbbsosEG0/img/team-1.png",
-    title: "Valve Hydro Testing & NDT Services",
-    description:
-      "Hydrostatic testing, ultrasonic testing, magnetic particle inspection, dye penetrant testing, radiography, and more.",
-  },
-  {
-    id: "6",
-    image: "https://c.animaapp.com/mlvt2sbbsosEG0/img/grinder-tool-1.png",
-    title: "Mobile Workshop Services",
-    description:
-      "DNV 2.7.1 certified mobile workshop for offshore and onshore valve inspection and maintenance.",
-  },
-];
+import { services } from "@/lib/services-data";
 
 interface EngineeringServicesSectionProps {
   isServicesPage?: boolean;

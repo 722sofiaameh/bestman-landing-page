@@ -81,7 +81,7 @@ export const PrinciplesSection = (): JSX.Element => {
           {/* Center image */}
           <div className="w-full md:w-[280px] lg:w-[360px] xl:w-[420px] mx-auto md:mx-0 overflow-hidden shrink-0">
             <img
-              src="/Builder.svg"
+              src="/PHOTO.svg"
               alt="Engineer at work"
               className="w-full h-full object-cover"
               style={{ minHeight: "280px" }}

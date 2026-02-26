@@ -70,13 +70,13 @@ export const MissionStatement = () => {
                     </div>
                 </div>
 
-                <div className="hidden lg:flex flex-1 min-w-0 h-[830px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:1200ms]">
+                <div className="hidden lg:flex flex-1 min-w-0 h-[630px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:1200ms]">
                     <div className="w-full h-full overflow-hidden">
                         <div
                             className="w-full h-full bg-cover bg-center"
                             style={{
                                 backgroundImage:
-                                    "url(https://c.animaapp.com/mlvt2sbbsosEG0/img/crane.png)",
+                                    "url(/Crane.svg)",
                             }}
                         />
                     </div>

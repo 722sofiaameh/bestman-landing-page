@@ -3,15 +3,7 @@
 import { useState } from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { JSX } from "react";
-
-const services = [
-  "Select a service",
-  "Engineering Consulting",
-  "Project Management",
-  "Safety Audits",
-  "Technical Support",
-  "Other",
-];
+import { services } from "@/lib/services-data";
 
 export const ContactSection = (): JSX.Element => {
   const [formData, setFormData] = useState({
@@ -130,9 +122,10 @@ export const ContactSection = (): JSX.Element => {
                   }
                   className="w-full appearance-none border border-gray-200 rounded-sm bg-white px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1180C5]/30 focus:border-[#1180C5] transition"
                 >
-                  {services.map((s) => (
-                    <option key={s} value={s === "Select a service" ? "" : s}>
-                      {s}
+                  <option value="">Select a service</option>
+                  {services.map((service) => (
+                    <option key={service.id} value={service.title}>
+                      {service.title}
                     </option>
                   ))}
                 </select>

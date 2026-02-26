@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { JSX } from "react";
 
 interface ServiceDetailHeroSectionProps {
@@ -17,12 +16,12 @@ export const ServiceDetailHeroSection = ({ service }: ServiceDetailHeroSectionPr
 
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
         {/* Left Column - Text Content */}
-        <div className="flex flex-col justify-center py-12 sm:py-14 md:py-16 px-4 sm:px-6 md:px-8 lg:px-[120px]">
+        <div className="flex flex-col justify-center py-12 sm:py-14 md:py-16 px-4 sm:px-6 md:px-8 lg:px-[128px]">
           <p className="text-white/80 text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
             Service
           </p>
           
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight mb-4 sm:mb-6 w-full lg:w-[530px]">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[45px] font-bold lg:font-semibold text-white leading-tight lg:leading-[72.8px] tracking-tight lg:tracking-[-1.38px] mb-4 sm:mb-6 w-full lg:w-[590px] align-middle">
             {service.title}
           </h1>
 
@@ -33,7 +32,12 @@ export const ServiceDetailHeroSection = ({ service }: ServiceDetailHeroSectionPr
           <Link href="/contact">
             <button className="flex items-center gap-2 bg-white border-2 border-[#1180C5] text-[#1180C5] font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-none hover:opacity-90 transition-opacity w-fit sm:w-fit text-sm sm:text-base">
               <span>Get in touch</span>
-              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
+              <img 
+                src="/arrow-right.svg" 
+                alt="Arrow right" 
+                className="w-4 h-4 sm:w-5 sm:h-5" 
+                style={{ filter: 'brightness(0) saturate(100%) invert(27%) sepia(95%) saturate(1352%) hue-rotate(175deg) brightness(95%) contrast(87%)' }}
+              />
             </button>
           </Link>
         </div>

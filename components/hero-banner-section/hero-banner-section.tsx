@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 
 export const HeroBannerSection = (): React.ReactElement => {
   return (
-    <section className="relative flex items-center justify-center min-h-[500px] sm:min-h-[600px] lg:min-h-[690px] px-4 md:px-[60px] py-12 md:py-20">
-      <div className="absolute w-full h-full top-0 left-0 bg-[url(/Banner.svg)] bg-cover bg-[70%_center] sm:bg-center" />
+    <section className="relative flex items-center justify-center min-h-[500px] sm:min-h-[600px] lg:min-h-screen px-4 md:px-[60px] py-12 md:py-20">
+      <div className="absolute w-full h-full top-0 left-0 bg-[url(/mainBanner.svg)] bg-cover bg-[70%_center] sm:bg-center lg:bg-top" />
       <div className="bg-[linear-gradient(77deg,rgba(0,0,0,0.9)_8%,rgba(0,0,0,0.35)_52%,rgba(0,0,0,0)_100%)] absolute w-full h-full top-0 left-0" />
 
       <div className="relative w-full max-w-[1200px] mx-auto px-4 md:px-[5px]">
