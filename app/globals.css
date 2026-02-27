@@ -89,3 +89,18 @@ body {
   backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
 }
+
+/* Logo carousel animation */
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-logo-scroll {
+  animation: logo-scroll 20s linear infinite;
+  will-change: transform;
+}

@@ -1,6 +1,18 @@
 import { JSX } from "react";
 import { Card, CardContent } from "../ui/card";
 
+interface CompanyLogoVector {
+  src: string;
+  alt: string;
+  className: string;
+}
+
+interface CompanyLogo {
+  src?: string;
+  alt: string;
+  vectors?: CompanyLogoVector[];
+}
+
 const testimonials = [
   {
     rating: 5,
@@ -22,42 +34,28 @@ const testimonials = [
   },
 ];
 
-const companyLogos = [
+const companyLogos: CompanyLogo[] = [
   {
-    src: "https://c.animaapp.com/mlxaygwhYd0iJj/img/clip-path-group.png",
+    src: "/image14.svg",
     alt: "Company Logo 1",
   },
   {
-    src: "https://c.animaapp.com/mlxaygwhYd0iJj/img/clip-path-group-1.png",
+    src: "/image15.svg",
     alt: "Company Logo 2",
   },
   {
-    src: "https://c.animaapp.com/mlxaygwhYd0iJj/img/clip-path-group-2.png",
+    src: "/image16.svg",
     alt: "Company Logo 3",
   },
   {
-    src: "https://c.animaapp.com/mlxaygwhYd0iJj/img/clip-path-group-3.png",
+    src: "/image17.svg",
     alt: "Company Logo 4",
   },
-  {
-    vectors: [
-      {
-        src: "https://c.animaapp.com/mlxaygwhYd0iJj/img/vector-6.svg",
-        alt: "Vector 1",
-        className: "absolute w-[67.09%] h-[61.97%] top-[24.75%] left-[31.58%]",
-      },
-      {
-        src: "https://c.animaapp.com/mlxaygwhYd0iJj/img/vector-12.svg",
-        alt: "Vector 2",
-        className: "absolute w-[24.68%] h-[90.91%] top-[4.55%] left-0",
-      },
-    ],
-    alt: "Company Logo 5",
-  },
-  {
-    src: "https://c.animaapp.com/mlxaygwhYd0iJj/img/clip-path-group-4.png",
-    alt: "Company Logo 6",
-  },
+ 
+  // {
+  //   src: "https://c.animaapp.com/mlxaygwhYd0iJj/img/clip-path-group-4.png",
+  //   alt: "Company Logo 6",
+  // },
 ];
 
 export const CustomerTestimonialsSection = (): JSX.Element => {
@@ -121,33 +119,35 @@ export const CustomerTestimonialsSection = (): JSX.Element => {
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 lg:gap-10 w-full">
-              {companyLogos.map((logo, index) => (
-                <div
-                  key={index}
-                  className="w-[120px] h-[24px] sm:w-[140px] sm:h-[26px] lg:w-[161.66px] lg:h-[30px] flex items-center justify-center"
-                >
-                  {logo.vectors ? (
-                    <div className="relative w-[80px] h-[24px] sm:w-[95px] sm:h-[27px] lg:w-[105px] lg:h-[30px]">
-                      {logo.vectors.map((vector, vectorIndex) => (
-                        <img
-                          key={vectorIndex}
-                          className={vector.className}
-                          alt={vector.alt}
-                          src={vector.src}
-                        />
-                      ))}
-                    </div>
-                  ) : (
-                    <div
-                      className="w-full h-full bg-center bg-no-repeat bg-contain"
-                      style={{ backgroundImage: `url(${logo.src})` }}
-                      role="img"
-                      aria-label={logo.alt}
-                    />
-                  )}
-                </div>
-              ))}
+            <div className="w-full overflow-hidden">
+              <div className="flex items-center gap-6 sm:gap-8 lg:gap-10 w-max animate-logo-scroll">
+                {[...companyLogos, ...companyLogos].map((logo, index) => (
+                  <div
+                    key={index}
+                    className="w-[120px] h-[24px] sm:w-[140px] sm:h-[26px] lg:w-[240px] lg:h-[80px] flex items-center justify-center"
+                  >
+                    {logo.vectors ? (
+                      <div className="relative w-[80px] h-[24px] sm:w-[95px] sm:h-[27px] lg:w-[220px] lg:h-[80px]">
+                        {logo.vectors.map((vector: CompanyLogoVector, vectorIndex: number) => (
+                          <img
+                            key={vectorIndex}
+                            className={vector.className}
+                            alt={vector.alt}
+                            src={vector.src}
+                          />
+                        ))}
+                      </div>
+                    ) : (
+                      <div
+                        className="w-full h-full lg:h-[80px] bg-center bg-no-repeat bg-contain"
+                        style={{ backgroundImage: `url(${logo.src})` }}
+                        role="img"
+                        aria-label={logo.alt}
+                      />
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
