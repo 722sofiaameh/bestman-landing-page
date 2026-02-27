@@ -13,8 +13,8 @@ interface ServiceDetailsPageProps {
 
 export default async function ServiceDetailsPage({ params }: ServiceDetailsPageProps) {
   const { id } = await params;
-  const service = services.find((s) => s.id === id) || services[0];
-  const otherServices = services.filter((s) => s.id !== id).slice(0, 3);
+  const service = services.find((s) => s.slug === id) || services[0];
+  const otherServices = services.filter((s) => s.slug !== id).slice(0, 3);
 
   return (
     <div className="flex flex-col w-full items-start relative bg-white overflow-hidden">
@@ -119,7 +119,7 @@ export default async function ServiceDetailsPage({ params }: ServiceDetailsPageP
                         {otherService.description}
                       </p>
                     </div>
-                    <Link href={`/services/${otherService.id}`} className="mt-auto">
+                    <Link href={`/services/${otherService.slug}`} className="mt-auto">
                       <div className="flex items-center gap-2 sm:gap-3 relative group w-fit">
                         <span className="text-[#1180c5] font-semibold text-sm sm:text-base">
                           Learn More

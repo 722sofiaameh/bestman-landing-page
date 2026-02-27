@@ -11,7 +11,7 @@ interface ProductDetailsPageProps {
 
 export default async function ProductDetailsPage({ params }: ProductDetailsPageProps) {
   const { id } = await params;
-  const product = products.find((p) => p.id === id) || products[0];
+  const product = products.find((p) => p.slug === id) || products[0];
   const overview = product.overview && product.overview.length > 0 ? product.overview : [product.description];
   const keyFeatures = product.keyFeatures || [];
   const whyChoose = product.whyChoose || [];

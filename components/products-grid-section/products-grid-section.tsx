@@ -66,7 +66,7 @@ export const ProductsGridSection = (): JSX.Element => {
               image={product.image}
               title={product.title}
               description={product.description}
-              href={`/products/${product.id}`}
+              href={`/products/${product.slug}`}
             />
           ))}
         </div>

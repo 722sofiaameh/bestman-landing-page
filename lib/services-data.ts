@@ -12,6 +12,7 @@ export interface ServiceOverview {
 
 export interface Service {
   id: string;
+  slug: string;
   image: string;
   title: string;
   description: string;
@@ -21,6 +22,7 @@ export interface Service {
 export const services: Service[] = [
   {
     id: "1",
+    slug: "valve-procurement-installation-commissioning",
     image: "/Drawings.svg",
     title: "Valve Procurement, Installation & Commissioning",
     description:
@@ -61,6 +63,7 @@ export const services: Service[] = [
   },
   {
     id: "2",
+    slug: "valve-testing-repair-maintenance",
     image: "/Team.svg",
     title: "Valve Testing, Repair & Maintenance",
     description:
@@ -104,6 +107,7 @@ export const services: Service[] = [
   },
   {
     id: "3",
+    slug: "instrumentation-calibration-services",
     image: "/Tool1.svg",
     title: "Instrumentation & Calibration Services",
     description:
@@ -143,6 +147,7 @@ export const services: Service[] = [
   },
   {
     id: "4",
+    slug: "fabrication-precision-machining-services",
     image: "/Drawings1.svg",
     title: "Fabrication & Precision Machining Services",
     description:
@@ -182,6 +187,7 @@ export const services: Service[] = [
   },
   {
     id: "5",
+    slug: "valve-hydro-testing-ndt",
     image: "/image6.svg",
     title: "Valve Hydro Testing & Non-Destructive Testing (NDT)",
     description:
@@ -221,6 +227,7 @@ export const services: Service[] = [
   },
   {
     id: "6",
+    slug: "dnv-2-7-1-certified-mobile-workshop-services",
     image: "/Grinder-Tool2.svg",
     title: "DNV 2.7.1 Certified Mobile Workshop Services",
     description:

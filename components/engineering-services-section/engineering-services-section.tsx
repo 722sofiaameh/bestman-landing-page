@@ -110,7 +110,7 @@ export const EngineeringServicesSection = ({
                   </p>
                 </div>
 
-                <Link href={`/services/${service.id}`}>
+                <Link href={`/services/${service.slug}`}>
                   <Button
                     variant="link"
                     className="cursor-pointer h-auto p-0 flex flex-col items-start gap-1 group mt-auto"

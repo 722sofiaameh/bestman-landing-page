@@ -1,5 +1,6 @@
 export interface Product {
   id: string;
+  slug: string;
   title: string;
   image: string;
   description: string;
@@ -11,6 +12,7 @@ export interface Product {
 export const products: Product[] = [
   {
     id: "1",
+    slug: "customized-containerized-mobile-workshop-solutions",
     title: "Customized Containerized Mobile Workshop Solutions",
     image: "/Container2.svg",
     description:
@@ -35,6 +37,7 @@ export const products: Product[] = [
   },
   {
     id: "2",
+    slug: "professional-in-situ-valve-repair-solutions",
     title: "Professional In-Situ Valve Repair Solutions",
     image: "/Construction.svg",
     description:
@@ -58,6 +61,7 @@ export const products: Product[] = [
   },
   {
     id: "3",
+    slug: "in-situ-valve-machining-technology",
     title: "In-Situ Valve Machining Technology",
     image: "/image11.svg",
     description:
@@ -79,6 +83,7 @@ export const products: Product[] = [
   },
   {
     id: "4",
+    slug: "portable-stationary-valve-grinding-equipment",
     title: "Portable & Stationary Valve Grinding Equipment",
     image: "/image-13.svg",
     description:
@@ -99,6 +104,7 @@ export const products: Product[] = [
   },
   {
     id: "5",
+    slug: "valve-test-equipment-pst-10",
     title: "Valve Test Equipment – PST-10",
     image: "/PHOTO-21.svg",
     description:
@@ -120,6 +126,7 @@ export const products: Product[] = [
   },
   {
     id: "6",
+    slug: "portable-stationary-turning-machines",
     title: "Portable & Stationary Turning Machines",
     image: "/image 13-(1).svg",
     description:
