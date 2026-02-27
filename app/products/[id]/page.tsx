@@ -4,22 +4,23 @@ import { CallToActionSection } from "@/components/call-to-action/call-to-action-
 import { products } from "@/lib/products-data";
 
 interface ProductDetailsPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
-export default function ProductDetailsPage({ params }: ProductDetailsPageProps) {
-  const product = products.find((p) => p.id === params.id) || products[0];
+export default async function ProductDetailsPage({ params }: ProductDetailsPageProps) {
+  const { id } = await params;
+  const product = products.find((p) => p.id === id) || products[0];
   const overview = product.overview && product.overview.length > 0 ? product.overview : [product.description];
   const keyFeatures = product.keyFeatures || [];
   const whyChoose = product.whyChoose || [];
 
   return (
     <div className="flex flex-col w-full items-start relative bg-white overflow-hidden">
-      <Navbar backgroundColor="bg-[#1180C5]" />
+      <Navbar backgroundColor="bg-greyscale-0" />
 
-      <div className="w-full mt-24 sm:mt-20 md:mt-24 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+      <div className="w-full mt-24 sm:mt-20 md:mt-28 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
 
         {/* Header Section */}
         <div className="flex flex-col items-center justify-center py-6 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-[120px]">
@@ -49,13 +50,15 @@ export default function ProductDetailsPage({ params }: ProductDetailsPageProps) 
           <div className="max-w-[1200px] mx-auto space-y-10 sm:space-y-12 lg:space-y-14">
             {/* Product Overview */}
             <div className="space-y-4 sm:space-y-5">
-              <h2 className="text-[#1180C5] font-bold text-xl sm:text-2xl md:text-3xl lg:text-[32px] leading-tight">
+            <h2 className="text-start text-[#1180C5] font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-4 md:mb-4">
+
                 Product Overview
               </h2>
               {overview.map((paragraph, index) => (
                 <p
                   key={index}
-                  className="text-[#5A6272] text-sm sm:text-base leading-relaxed"
+                  className="text-[#5A6272] text-sm sm:text-base leading-relaxed text-start"
+
                 >
                   {paragraph}
                 </p>
@@ -63,14 +66,16 @@ export default function ProductDetailsPage({ params }: ProductDetailsPageProps) 
             </div>
 
             {/* Key Features + Why Choose Our Equipment */}
-            <div className="grid grid-cols-1 gap-10 sm:gap-12">
+            <div className="grid grid-cols-1 gap-8 sm:gap-8">
               {/* Key Features */}
               {keyFeatures.length > 0 && (
                 <div className="space-y-4 sm:space-y-5">
-                  <h3 className="text-[#1180C5] font-bold text-lg sm:text-xl md:text-2xl leading-tight">
+                             <h3 className="text-[#1180C5] font-bold text-base sm:text-xl md:text-2xl mb-4 sm:mb-4">
+
                     Key Features
                   </h3>
-                  <ul className="list-disc list-inside space-y-2 text-[#5A6272] text-sm sm:text-base leading-relaxed">
+              <ul className="list-disc list-inside space-y-1 sm:space-y-1 text-[#5A6272] text-sm sm:text-base leading-relaxed max-w-3xl">
+
                     {keyFeatures.map((feature, index) => (
                       <li key={index}>{feature}</li>
                     ))}
@@ -80,11 +85,13 @@ export default function ProductDetailsPage({ params }: ProductDetailsPageProps) 
 
               {/* Why Choose Our Equipment */}
               {whyChoose.length > 0 && (
-                <div className="space-y-4 sm:space-y-5">
-                  <h3 className="text-[#1180C5] font-bold text-lg sm:text-xl md:text-2xl leading-tight">
+                <div className="space-y-3 sm:space-y-3">
+                            <h3 className="text-[#1180C5] font-bold text-base sm:text-xl md:text-2xl mb-4 sm:mb-4">
+
                     Why Choose Our Equipment
                   </h3>
-                  <ul className="list-disc list-inside space-y-2 text-[#5A6272] text-sm sm:text-base leading-relaxed">
+              <ul className="list-disc list-inside space-y-1 sm:space-y-1 text-[#5A6272] text-sm sm:text-base leading-relaxed max-w-3xl">
+
                     {whyChoose.map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
