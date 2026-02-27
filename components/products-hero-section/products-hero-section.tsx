@@ -39,15 +39,14 @@ export const ProductsHeroSection = () => {
           data-animate
           className="text-2xl sm:text-3xl md:text-5xl lg:text-[56px] font-bold text-white leading-tight tracking-tight mb-3 sm:mb-4 lg:mb-7 px-2 sm:px-4"
         >
-          Rhoncus a
+         Our Products
         </h1>
 
         <p
           data-animate
-          className="text-xs sm:text-sm lg:text-base text-white leading-relaxed max-w-[280px] sm:max-w-sm lg:max-w-md px-2 sm:px-4"
+          className="text-xs sm:text-sm lg:text-base text-white leading-relaxed max-w-[280px] sm:max-w-sm lg:max-w-3xl px-2 sm:px-4"
         >
-          Volutpat cras nisi sed in. Adipiscing vitae odio viverra faucibus.
-          Sed condimentum lacus euismod lectus leo id.
+          From portable machining to mobile workshop units, our equipment is built to reduce downtime and ensure operational reliability.
         </p>
       </div>
     </section>
