@@ -109,8 +109,8 @@ export const MissionStatementSection = (): JSX.Element => {
           <div className="-translate-y-4 animate-fade-in opacity-0 [--animation-delay:1000ms]">
             <Link href="/why-choose-us">
               <Button
-                variant="outline"
-                className="cursor-pointer h-auto flex items-center justify-center gap-3 sm:gap-4 bg-white rounded-none pt-3 pb-[15px] px-6 md:px-[30px] border-[#0c6e8a] text-[#0c6e8a] hover:bg-[#0c6e8a] hover:text-white transition-colors w-full sm:w-auto"
+                // variant="outline"
+                className="cursor-pointer h-auto flex items-center justify-center gap-3 sm:gap-4 bg-white rounded-none pt-3 pb-[15px] px-6 md:px-[30px] border border-[#0c6e8a] text-[#0c6e8a] w-full sm:w-auto"
               >
                 <span className="font-semibold text-sm sm:text-base leading-[22px] sm:leading-[25.6px]">
                   Why Bestman?

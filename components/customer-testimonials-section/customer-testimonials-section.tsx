@@ -17,19 +17,20 @@ const testimonials = [
   {
     rating: 5,
     quote:
-      "We are proud to have executed notable projects and partnered with leading organizations in Nigeria's oil & gas and industrial sectors.",
-    companies: "EFCO, PROVALVE, Nuova Simat, PetroServices",
+      "Their mobile workshop solution allowed us to carry out valve repairs on-site without transporting equipment off location. The efficiency and technical competence of their technicians were impressive.",
+    companies: "Project Engineer, EPC Contractor",
   },
   {
     rating: 5,
     quote:
-      "We are proud to have executed notable projects and partnered with leading organizations in Nigeria's oil & gas and industrial sectors.",
-    companies: "EFCO, PROVALVE, Nuova Simat, PetroServices",
+      "From valve testing to final documentation, Bestman maintained high technical standards throughout the project. Their structured approach gave us full confidence in system integrity.",
+    companies: "Operations Supervisor, Offshore Facility",
   },
   {
     rating: 5,
     quote:
-      "We are proud to have executed notable projects and partnered with leading organizations in Nigeria's oil & gas and industrial sectors.",
+      "The team mobilized quickly and handled complex valve refurbishment with minimal disruption to our operations. We value their reliability and engineering expertise."
+,
     companies: "EFCO, PROVALVE, Nuova Simat, PetroServices",
   },
 ];
@@ -60,7 +61,7 @@ const companyLogos: CompanyLogo[] = [
 
 export const CustomerTestimonialsSection = (): JSX.Element => {
   return (
-    <section className="flex justify-center py-0 pb-12 sm:pb-16 md:pb-20 lg:pb-[121px] px-4 sm:px-6 md:px-8 lg:px-[120px]">
+    <section className="flex justify-center py-0 pb-12 sm:pb-16 md:pb-20 lg:pb-[121px] px-4 sm:px-6 md:px-8 lg:px-[120px] bg-white">
       <div className="flex flex-col max-w-[1200px] w-full items-center px-4 sm:px-[15px]">
         <div className="flex flex-col items-center justify-center gap-8 sm:gap-10 md:gap-[50px] w-full -translate-y-4 animate-fade-in opacity-0">
           <header className="flex flex-col items-center gap-3 sm:gap-4 md:gap-5 w-full">
@@ -77,10 +78,13 @@ export const CustomerTestimonialsSection = (): JSX.Element => {
             </div>
           </header>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-[30px] w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+          <div className="grid grid-cols-1 md:grid-cols-3 items-stretch gap-4 sm:gap-6 md:gap-[30px] w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="flex-1 border-0 shadow-none cursor-pointer">
-                <CardContent className="flex flex-col gap-5 sm:gap-[30px] p-4 sm:p-5 bg-neutral-50">
+              <Card
+                key={index}
+                className="h-full flex flex-col border-0 shadow-none cursor-pointer"
+              >
+                <CardContent className="flex flex-col justify-between gap-5 sm:gap-[30px] p-4 sm:p-5 bg-neutral-50 h-full">
                   <div className="flex flex-col gap-3 sm:gap-[19.39px]">
                     <div className="flex items-center gap-0.5">
                       {Array.from({ length: testimonial.rating }).map(
@@ -104,8 +108,26 @@ export const CustomerTestimonialsSection = (): JSX.Element => {
                     </p>
                   </div>
 
-                  <p className="font-brentor-template-framer-website-plus-jakarta-sans-regular font-[number:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-weight)] text-[#5a6272] text-xs sm:text-[length:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-size)] tracking-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-letter-spacing)] leading-[1.6] sm:leading-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-line-height)] [font-style:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-style)]">
-                    {testimonial.companies}
+                  <p className="mt-2 font-brentor-template-framer-website-plus-jakarta-sans-regular font-[number:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-weight)] text-[#5a6272] text-xs sm:text-[length:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-size)] tracking-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-letter-spacing)] leading-[1.6] sm:leading-[var(--brentor-template-framer-website-plus-jakarta-sans-regular-line-height)] [font-style:var(--brentor-template-framer-website-plus-jakarta-sans-regular-font-style)]">
+                    {index === 0 ? (
+                      <>
+                        Project Engineer
+                        <br />
+                        EPC Contractor
+                      </>
+                    ) : index === 1 ? (
+                      <>
+                        Operations Supervisor
+                        <br />
+                        Offshore Facility
+                      </>
+                    ) : (
+                      <>
+                        EFCO, PROVALVE, Nuova Simat,
+                        <br />
+                        PetroServices
+                      </>
+                    )}
                   </p>
                 </CardContent>
               </Card>

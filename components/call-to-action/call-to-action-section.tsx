@@ -23,8 +23,8 @@ export const CallToActionSection = (): JSX.Element => {
 
             <Link href="/contact">
               <Button
-                variant="outline"
-                className="cursor-pointer w-full sm:w-fit h-auto bg-white hover:bg-white/90 text-[#0C6E8A] border border-white px-5 sm:px-6 md:px-6 py-2 sm:py-3 gap-3 rounded-none transition-all duration-200"
+                // variant="outline"
+                className="cursor-pointer w-full sm:w-fit h-auto bg-white text-[#0C6E8A] border border-white px-5 sm:px-6 md:px-6 py-2 sm:py-3 gap-3 rounded-none"
               >
                 <span className="font-medium text-[12px] sm:text-sm md:text-[15px] tracking-wide">
                   Request a quote
