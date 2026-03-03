@@ -1,6 +1,7 @@
 import { MissionVisionSection as Navbar } from "@/components/mission-vision-section/mission-vision-section";
 import { FooterSection } from "@/components/footer-section/footer-section";
 import { CallToActionSection } from "@/components/call-to-action/call-to-action-section";
+import { ProductImageGallery } from "@/components/product-image-gallery/product-image-gallery";
 import { products } from "@/lib/products-data";
 
 interface ProductDetailsPageProps {
@@ -15,6 +16,7 @@ export default async function ProductDetailsPage({ params }: ProductDetailsPageP
   const overview = product.overview && product.overview.length > 0 ? product.overview : [product.description];
   const keyFeatures = product.keyFeatures || [];
   const whyChoose = product.whyChoose || [];
+  const images = product.galleryImages && product.galleryImages.length > 0 ? product.galleryImages : [product.image];
 
   return (
     <div className="flex flex-col w-full items-start relative bg-white overflow-hidden">
@@ -34,14 +36,10 @@ export default async function ProductDetailsPage({ params }: ProductDetailsPageP
           </div>
         </div>
 
-        {/* Full Width Image */}
+        {/* Image Gallery */}
         <div className="w-full px-4 md:px-8 lg:px-[120px]">
           <div className="max-w-[1200px] mx-auto">
-            <img
-              src={product.image}
-              alt={product.title}
-              className="w-full h-[220px] sm:h-[300px] md:h-[400px] lg:h-[500px] object-cover"
-            />
+            <ProductImageGallery images={images} title={product.title} />
           </div>
         </div>
 

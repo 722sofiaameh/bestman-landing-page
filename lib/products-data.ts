@@ -3,6 +3,7 @@ export interface Product {
   slug: string;
   title: string;
   image: string;
+  galleryImages?: string[];
   description: string;
   overview: string[];
   keyFeatures: string[];
@@ -15,6 +16,7 @@ export const products: Product[] = [
     slug: "customized-containerized-mobile-workshop-solutions",
     title: "Customized Containerized Mobile Workshop Solutions",
     image: "/Container2.svg",
+    galleryImages: ["/Container2.svg", "/PHOTO-2026-02-05-14-14-06h(1).svg", "/PHOTO-2026-02-05-14-14-0661.svg"],
     description:
       "Bestman manufactures fully customized containerized Mobile Workshops designed specifi..",
     overview: [
