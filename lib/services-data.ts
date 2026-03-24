@@ -23,7 +23,7 @@ export const services: Service[] = [
   {
     id: "1",
     slug: "valve-procurement-installation-commissioning",
-    image: "/Drawings.svg",
+    image: "/product-drawings.svg",
     title: "Valve Procurement, Installation & Commissioning",
     description:
       "End-to-end sourcing, supply, installation, and commissioning of industrial valves and related equipment – delivered with precision, compliance, and efficiency.",
@@ -64,7 +64,7 @@ export const services: Service[] = [
   {
     id: "2",
     slug: "valve-testing-repair-maintenance",
-    image: "/Team.svg",
+    image: "/product-image-8.svg",
     title: "Valve Testing, Repair & Maintenance",
     description:
       "Comprehensive in-house and on-site valve lifecycle services designed to ensure reliability, safety, and optimal performance.",
@@ -108,7 +108,7 @@ export const services: Service[] = [
   {
     id: "3",
     slug: "instrumentation-calibration-services",
-    image: "/Tool1.svg",
+    image: "/product-image-2.svg",
     title: "Instrumentation & Calibration Services",
     description:
       "Precision calibration and testing of control systems and measurement instruments to ensure accurate and reliable performance.",
@@ -148,7 +148,7 @@ export const services: Service[] = [
   {
     id: "4",
     slug: "fabrication-precision-machining-services",
-    image: "/Drawings1.svg",
+    image: "/product-image-9.svg",
     title: "Fabrication & Precision Machining Services",
     description:
       "High-precision CNC machining, flange works, and custom metal fabrication solutions engineered for industrial performance and durability.",
@@ -188,7 +188,7 @@ export const services: Service[] = [
   {
     id: "5",
     slug: "valve-hydro-testing-ndt",
-    image: "/image6.svg",
+    image: "/product-image-6.svg",
     title: "Valve Hydro Testing & Non-Destructive Testing (NDT)",
     description:
       "Comprehensive hydrostatic and non-destructive testing services ensuring safety, compliance, and operational reliability.",
@@ -228,7 +228,7 @@ export const services: Service[] = [
   {
     id: "6",
     slug: "dnv-2-7-1-certified-mobile-workshop-services",
-    image: "/Grinder-Tool2.svg",
+    image: "/product-image-3.svg",
     title: "DNV 2.7.1 Certified Mobile Workshop Services",
     description:
       "On-site valve inspection, testing, and maintenance solutions designed for offshore and remote industrial operations.",

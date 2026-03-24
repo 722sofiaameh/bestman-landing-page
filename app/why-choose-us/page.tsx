@@ -16,7 +16,7 @@ export default function WhyChooseUsPage() {
       </div>
       <section className="relative w-full overflow-hidden" style={{ marginTop: '-40px', display: 'block' }}>
         <div className="relative w-full h-[250px] sm:h-[350px] md:h-[350px] lg:h-[540px] -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
-          <div className="absolute inset-0 bg-[url(/Builder-1.svg)] bg-cover bg-center bg-no-repeat" />
+          <div className="absolute inset-0 bg-[url(/why-choose-us-banner.svg)] bg-cover bg-center bg-no-repeat" />
           <div className="absolute inset-0 bg-[#1180c5] opacity-20 z-10" />
         </div>
       </section>

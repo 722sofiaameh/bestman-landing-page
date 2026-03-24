@@ -76,7 +76,7 @@ export const MissionStatement = () => {
                             className="w-full h-full bg-cover bg-center"
                             style={{
                                 backgroundImage:
-                                    "url(/Crane.svg)",
+                                    "url(/mission-page-container.svg)",
                             }}
                         />
                     </div>

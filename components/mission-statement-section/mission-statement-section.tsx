@@ -133,7 +133,7 @@ export const MissionStatementSection = (): JSX.Element => {
               className="w-full h-full bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url(/photo-main.svg)",
+                  "url(/mission-container.svg)",
               }}
             />
           </div>
