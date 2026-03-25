@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from "lucide-react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
@@ -83,11 +83,15 @@ export const EngineeringServicesSection = ({
                 } as React.CSSProperties
               }
             >
-              <div className="w-full h-[180px] sm:h-[200px] overflow-hidden rounded-none shrink-0">
-                <img
+              <div className="relative w-full h-[180px] sm:h-[200px] overflow-hidden rounded-none shrink-0 bg-[#eef1f4]">
+                <Image
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  fill
+                  sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 400px"
+                  priority={index < 3}
+                  unoptimized
+                  className="object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
 
