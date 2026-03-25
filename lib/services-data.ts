@@ -108,8 +108,7 @@ export const services: Service[] = [
   {
     id: "3",
     slug: "instrumentation-calibration-services",
-    // Smaller asset than product-image-2.svg (~7MB); huge SVGs caused empty/broken tiles while decoding.
-    image: "/Tool1.svg",
+    image: "/product-image-2.svg",
     title: "Instrumentation & Calibration Services",
     description:
       "Precision calibration and testing of control systems and measurement instruments to ensure accurate and reliable performance.",

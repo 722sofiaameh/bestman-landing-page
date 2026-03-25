@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "optimize:product-image-2": "node scripts/optimize-product-image-2.cjs"
   },
   "dependencies": {
     "@radix-ui/react-separator": "^1.1.8",
